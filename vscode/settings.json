@@ -18,7 +18,6 @@
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.limit.value": 10,
-  "workbench.productIconTheme": "material-product-icons",
   "workbench.sideBar.location": "left",
   "workbench.layoutControl.enabled": false,
   "workbench.settings.editor": "json",
@@ -121,6 +120,9 @@
     "source.organizeImports": false
   },
 
+  // ESLint
+  "eslint.run": "onSave",
+
   // prettier
   "prettier.enable": true,
   "prettier.semi": true,
@@ -141,6 +143,15 @@
   // ErrorLens
   "errorLens.enabledDiagnosticLevels": ["warning", "error"],
   "errorLens.excludeBySource": ["eslint", "scss", "css"],
+  "errorLens.gutterIconsEnabled": true,
+  "errorLens.gutterIconsFollowCursorOverride": false,
+
+  // AWS Toolkit
+  "aws.telemetry": false,
+  "aws.suppressPrompts": {
+    "codeWhispererNewWelcomeMessage": true
+  },
+  "aws.codeWhisperer.shareCodeWhispererContentWithAWS": false,
 
   // VS Code Animations
   "vscode_custom_css.imports": [
@@ -303,7 +314,8 @@
     "<C-a>": true,
     "<C-f>": false,
     "<C-w>": false,
-    "<C-x>": false
+    "<C-x>": false,
+    "<C-b>": false
   },
   "vim.normalModeKeyBindings": [
     { "before": ["leader", "w"], "commands": [":w!"] },
@@ -345,7 +357,5 @@
     { "before": ["<Tab>"], "after": [">", ">", "<Esc>"] },
     { "before": ["<S-Tab>"], "after": ["<", "<", "<Esc>"] },
     { "before": ["<C-a>"], "after": ["<Esc>", "<C-o>", "<C-o>"] }
-  ],
-  "errorLens.gutterIconsEnabled": true,
-  "errorLens.gutterIconsFollowCursorOverride": false
+  ]
 }
