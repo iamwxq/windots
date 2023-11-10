@@ -1,306 +1,330 @@
 {
-    "window.menuBarVisibility": "toggle",
-    "window.commandCenter": false,
-    "window.titleBarStyle": "custom",
-    "window.autoDetectColorScheme": true,
-    "workbench.activityBar.location": "side",
-    "workbench.layoutControl.enabled": false,
-    "workbench.editor.tabCloseButton": "right",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.list.smoothScrolling": true,
-    "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
-    "workbench.preferredLightColorTheme": "Catppuccin Latte",
-    "workbench.colorTheme": "Catppuccin Mocha",
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.tree.expandMode": "singleClick",
-    "workbench.tree.indent": 20,
-    "workbench.editor.closeOnFileDelete": true,
-    "workbench.editor.highlightModifiedTabs": true,
-    "workbench.editor.limit.enabled": true,
-    "workbench.editor.limit.perEditorGroup": true,
-    "workbench.editor.limit.value": 10,
-    "workbench.sideBar.location": "left",
-    "workbench.settings.editor": "json",
-    // Common
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "extensions.autoUpdate": false,
-    "extensions.ignoreRecommendations": true,
-    "emmet.showSuggestionsAsSnippets": true,
-    "emmet.triggerExpansionOnTab": false,
-    "files.eol": "\n",
-    "files.insertFinalNewline": true,
-    "files.simpleDialog.enable": true,
-    "files.trimTrailingWhitespace": true,
-    "files.readonlyInclude": {
-        "node_modules/*": true
-    },
-    // Following three configs can get rid of the warning of downloading json schema failed
-    "http.proxy": "",
-    "http.proxyAuthorization": null,
-    "http.proxyStrictSSL": false,
-    // And DO NOT set this config, whatever 'on' or 'off'
-    // "http.proxySupport": "on",
-    "security.allowedUNCHosts": ["wsl.localhost"],
-    "security.workspace.trust.untrustedFiles": "open",
-    // colorscheme
-    "catppuccin.accentColor": "blue",
-    "catppuccin.boldKeywords": false,
-    "catppuccin.italicKeywords": false,
-    "catppuccin.italicComments": false,
-    "catppuccin.extraBordersEnabled": false,
-    "catppuccin.bracketMode": "neovim",
-    "catppuccin.colorOverrides": {
-        "mocha": {
-            "base": "#000000",
-            "mantle": "#000000",
-            "crust": "#000000"
-        }
-    },
-    // terminal
-    "terminal.integrated.fontSize": 14,
-    "terminal.integrated.cursorStyle": "block",
-    "terminal.integrated.allowChords": false,
-    "terminal.integrated.tabs.enabled": true,
-    "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.smoothScrolling": true,
-    "terminal.integrated.persistentSessionReviveProcess": "never",
-    "terminal.integrated.shellIntegration.decorationsEnabled": "never",
-    "terminal.integrated.defaultProfile.windows": "PowerShell",
-    "terminal.integrated.defaultProfile.linux": "zsh",
-    "terminal.integrated.fontFamily": "FiraCode Nerd Font, MiSans, 霞鹜新晰黑, Microsoft Yahei, monospace",
-    // editor
-    "editor.fontSize": 14,
-    "editor.inlayHints.fontSize": 13,
-    "editor.fontWeight": "normal",
-    "editor.cursorBlinking": "blink",
-    "editor.accessibilitySupport": "off",
-    "editor.smoothScrolling": true,
-    "editor.snippetSuggestions": "inline",
-    "editor.cursorSmoothCaretAnimation": "on",
-    "editor.find.addExtraSpaceOnTop": false,
-    "editor.detectIndentation": false,
-    "editor.inlineSuggest.enabled": true,
-    "editor.defaultColorDecorators": true,
-    "editor.suggestSelection": "first",
-    "editor.semanticHighlighting.enabled": true,
-    "editor.bracketPairColorization.enabled": false,
-    "editor.unicodeHighlight.invisibleCharacters": false,
-    "editor.stickyScroll.enabled": false,
-    "editor.hover.sticky": true,
-    "editor.tabSize": 4,
-    "editor.roundedSelection": true,
-    "editor.acceptSuggestionOnEnter": "off",
-    "editor.inlayHints.padding": true,
-    // "editor.inlayHints.fontFamily": "FiraCode Nerd Font, 霞鹜新晰黑, Microsoft Yahei, monospace",
-    // "editor.codeLensFontFamily": "FiraCode Nerd Font, 霞鹜新晰黑, Microsoft Yahei, monospace",
-    "editor.fontFamily": "FiraCode Nerd Font, MiSans, 霞鹜新晰黑, Microsoft Yahei, monospace",
-    "editor.fontLigatures": true,
-    "editor.linkedEditing": true,
-    "editor.scrollbar.horizontal": "hidden",
-    "editor.scrollbar.vertical": "auto",
-    "editor.minimap.size": "fit",
-    "editor.minimap.enabled": true,
-    "editor.minimap.renderCharacters": true,
-    "editor.minimap.maxColumn": 80,
-    "editor.minimap.scale": 2,
-    "editor.colorDecorators": false, // Since we already have 'color highlight' extension
-    "editor.guides.highlightActiveIndentation": "always",
-    "editor.defaultFormatter": "dprint.dprint",
-    "editor.formatOnSave": true,
-    "editor.formatOnType": false,
-    "editor.guides.bracketPairs": false,
-    "editor.quickSuggestions": {
-        "other": "on",
-        "strings": "off",
-        "comments": "off"
-    },
+  /* window & workbench */
+  "window.menuBarVisibility": "toggle",
+  "window.commandCenter": false,
+  "window.titleBarStyle": "custom",
+  "window.autoDetectColorScheme": true,
+  "workbench.activityBar.location": "side",
+  "workbench.layoutControl.enabled": false,
+  "workbench.editor.tabCloseButton": "right",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.list.smoothScrolling": true,
+  "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
+  "workbench.preferredLightColorTheme": "Catppuccin Latte",
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.tree.expandMode": "singleClick",
+  "workbench.tree.indent": 20,
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.perEditorGroup": true,
+  "workbench.editor.limit.value": 10,
+  "workbench.sideBar.location": "left",
+  "workbench.settings.editor": "json",
+
+  /* common */
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "extensions.autoUpdate": false,
+  "extensions.ignoreRecommendations": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.triggerExpansionOnTab": false,
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.simpleDialog.enable": true,
+  "files.trimTrailingWhitespace": true,
+  "files.readonlyInclude": {
+    "node_modules/*": true
+  },
+  // following three configs can get rid of the warning of downloading json schema failed
+  "http.proxy": "",
+  "http.proxyAuthorization": null,
+  "http.proxyStrictSSL": false,
+  // and DO NOT set this config, whatever 'on' or 'off'
+  // "http.proxySupport": "on",
+  "security.allowedUNCHosts": ["wsl.localhost"],
+  "security.workspace.trust.untrustedFiles": "open",
+
+  /* terminal */
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.cursorStyle": "block",
+  "terminal.integrated.allowChords": false,
+  "terminal.integrated.tabs.enabled": true,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "terminal.integrated.shellIntegration.decorationsEnabled": "never",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font, MiSans, 霞鹜新晰黑, Microsoft Yahei, monospace",
+
+  /* editor */
+  "editor.fontSize": 14,
+  "editor.inlayHints.fontSize": 13,
+  "editor.fontWeight": "normal",
+  "editor.cursorBlinking": "blink",
+  "editor.accessibilitySupport": "off",
+  "editor.smoothScrolling": true,
+  "editor.snippetSuggestions": "inline",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.find.addExtraSpaceOnTop": false,
+  "editor.detectIndentation": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.defaultColorDecorators": true,
+  "editor.suggestSelection": "first",
+  "editor.semanticHighlighting.enabled": true,
+  "editor.bracketPairColorization.enabled": false,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.stickyScroll.enabled": false,
+  "editor.hover.sticky": true,
+  "editor.tabSize": 2,
+  "editor.roundedSelection": true,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.inlayHints.padding": true,
+  "editor.fontFamily": "FiraCode Nerd Font, MiSans, 霞鹜新晰黑, Microsoft Yahei, monospace",
+  "editor.fontLigatures": true,
+  "editor.linkedEditing": true,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "auto",
+  "editor.minimap.size": "fit",
+  "editor.minimap.enabled": true,
+  "editor.minimap.renderCharacters": true,
+  "editor.minimap.maxColumn": 80,
+  "editor.minimap.scale": 2,
+  "editor.colorDecorators": false, // since we already have 'color highlight' extension
+  "editor.guides.highlightActiveIndentation": "always",
+  "editor.defaultFormatter": "dprint.dprint",
+  "editor.formatOnSave": true,
+  "editor.formatOnType": false,
+  "editor.guides.bracketPairs": false,
+  "editor.quickSuggestions": {
+    "other": "on",
+    "strings": "off",
+    "comments": "off"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true,
+    "source.organizeImports": false
+  },
+
+  /* colorscheme */
+  "catppuccin.accentColor": "blue",
+  "catppuccin.boldKeywords": false,
+  "catppuccin.italicKeywords": false,
+  "catppuccin.italicComments": false,
+  "catppuccin.extraBordersEnabled": false,
+  "catppuccin.bracketMode": "neovim",
+  "catppuccin.colorOverrides": {
+    "mocha": {
+      "base": "#000000",
+      "mantle": "#000000",
+      "crust": "#000000"
+    }
+  },
+
+  /* eslint */
+  "eslint.run": "onType",
+  "eslint.probe": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "vue",
+    "markdown"
+  ],
+
+  /* dprint */
+  "dprint.verbose": false,
+
+  /* errorlens */
+  "errorLens.enabledDiagnosticLevels": ["warning", "error"],
+  "errorLens.excludeBySource": ["eslint", "scss", "css"],
+  "errorLens.gutterIconsEnabled": true,
+  "errorLens.gutterIconsFollowCursorOverride": false,
+  "errorLens.gutterIconSet": "defaultOutline",
+  "errorLens.messageBackgroundMode": "none",
+
+  /* evenbettertoml */
+  "evenBetterToml.formatter.allowedBlankLines": 1,
+  "evenBetterToml.formatter.arrayAutoCollapse": true,
+  "evenBetterToml.formatter.columnWidth": 88,
+  "evenBetterToml.schema.enabled": true,
+  "evenBetterToml.schema.links": true,
+
+  /* prettier */
+  "prettier.enable": true,
+  "prettier.semi": true,
+  "prettier.tabWidth": 4,
+  "prettier.endOfLine": "lf",
+  "prettier.useTabs": false,
+  "prettier.printWidth": 88,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.arrowParens": "always",
+  "prettier.bracketSpacing": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.bracketSameLine": true,
+  "prettier.quoteProps": "as-needed",
+  "prettier.singleAttributePerLine": false,
+  "prettier.vueIndentScriptAndStyle": false,
+
+  /* live server */
+  "liveServer.settings.donotShowInfoMsg": true,
+
+  /* codesnap */
+  "codesnap.containerPadding": "0em",
+  "codesnap.backgroundColor": "#abb8c3",
+  "codesnap.boxShadow": "rgba(0, 0, 0, 0) 0px 20px 68px",
+  "codesnap.transparentBackground": true,
+
+  /* color highlight */
+  "color-highlight.matchRgbWithNoFunction": false,
+  "color-highlight.matchWords": true,
+
+  /* lingma */
+  "Lingma.methodQuickOperation": false,
+
+  /* markdown-preview */
+  "markdown-preview-enhanced.codeBlockTheme": "one-dark.css",
+  "markdown-preview-enhanced.mermaidTheme": "dark",
+
+  /* todo tree */
+  "todo-tree.tree.showCurrentScanMode": false,
+  "todo-tree.tree.showCountsInTree": true,
+
+  /* path inteliisense */
+  "javascript.suggest.paths": false,
+  "typescript.suggest.paths": false,
+
+  /* tailwind css */
+  "tailwindCSS.experimental.configFile": "tailwind.config.ts",
+  "tailwindCSS.experimental.classRegex": [
+    ["ui:\\s*{([^)]*)\\s*}", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["/\\*ui\\*/\\s*{([^;]*)}", ":\\s*[\"'`]([^\"'`]*).*?[\"'`]"]
+  ],
+
+  /* c/c++ */
+  "C_Cpp.clang_format_style": "file:D:/develop/cpp/.clang-format",
+  "C_Cpp.clang_format_fallbackStyle": "Visual Studio",
+  "C_Cpp.vcFormat.indent.braces": true,
+  "C_Cpp.vcFormat.indent.caseContentsWhenBlock": true,
+  "C_Cpp.vcFormat.indent.caseLabels": true,
+  "C_Cpp.vcFormat.indent.accessSpecifiers": true,
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+
+  /* rust */
+  "rust-analyzer.lens.enable": false,
+  "rust-analyzer.inlayHints.parameterHints.enable": false,
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+
+  /* go */
+  "go.toolsManagement.autoUpdate": true,
+  "go.inlayHints.compositeLiteralFields": true,
+  "go.inlayHints.constantValues": true,
+  "go.inlayHints.functionTypeParameters": true,
+  "go.inlayHints.rangeVariableTypes": true,
+  "go.formatTool": "goimports",
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+
+  /* python */
+  "notebook.lineNumbers": "on",
+  "notebook.output.scrolling": true,
+  "python.terminal.activateEnvironment": false,
+  "python.condaPath": "D:/develop/miniconda/condabin",
+  "[python]": {
     "editor.codeActionsOnSave": {
-        "source.fixAll": true,
-        "source.fixAll.eslint": true,
-        "source.organizeImports": false
+      "source.fixAll.ruff": true,
+      "source.organizeImports.ruff": true
     },
-    // ESLint
-    "eslint.run": "onType",
-    // "eslint.format.enable": true,
-    // "eslint.useESLintClass": true,
-    // "eslint.experimental.useFlatConfig": true,
-    "eslint.probe": [
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact",
-        "html",
-        "vue",
-        "markdown"
-    ],
-    // Dprint
-    "dprint.verbose": false,
-    // prettier
-    "prettier.enable": true,
-    "prettier.semi": true,
-    "prettier.tabWidth": 4,
-    "prettier.endOfLine": "lf",
-    "prettier.useTabs": false,
-    "prettier.printWidth": 88,
-    "prettier.singleQuote": true,
-    "prettier.trailingComma": "all",
-    "prettier.arrowParens": "always",
-    "prettier.bracketSpacing": true,
-    "prettier.jsxSingleQuote": true,
-    "prettier.bracketSameLine": true,
-    "prettier.quoteProps": "as-needed",
-    "prettier.singleAttributePerLine": false,
-    "prettier.vueIndentScriptAndStyle": false,
-    // ErrorLens
-    "errorLens.enabledDiagnosticLevels": ["warning", "error"],
-    "errorLens.excludeBySource": ["eslint", "scss", "css"],
-    "errorLens.gutterIconsEnabled": true,
-    "errorLens.gutterIconsFollowCursorOverride": false,
-    "errorLens.gutterIconSet": "defaultOutline",
-    "errorLens.messageBackgroundMode": "none",
-    // EvenBetterTOML
-    "evenBetterToml.formatter.allowedBlankLines": 1,
-    "evenBetterToml.formatter.arrayAutoCollapse": true,
-    "evenBetterToml.formatter.columnWidth": 80,
-    "evenBetterToml.schema.enabled": false,
-    "evenBetterToml.schema.links": true,
-    // live server
-    "liveServer.settings.donotShowInfoMsg": true,
-    // Codesnap
-    "codesnap.containerPadding": "0em",
-    "codesnap.backgroundColor": "#abb8c3",
-    "codesnap.boxShadow": "rgba(0, 0, 0, 0) 0px 20px 68px",
-    "codesnap.transparentBackground": true,
-    // Color highlight
-    "color-highlight.matchRgbWithNoFunction": false,
-    "color-highlight.matchWords": true,
-    // Lingma
-    "Lingma.methodQuickOperation": false,
-    // Markdown-preview
-    "markdown-preview-enhanced.codeBlockTheme": "one-dark.css",
-    "markdown-preview-enhanced.mermaidTheme": "dark",
-    // TODO Tree
-    "todo-tree.tree.showCurrentScanMode": false,
-    "todo-tree.tree.showCountsInTree": true,
-    // Path Inteliisense
-    "javascript.suggest.paths": false,
-    "typescript.suggest.paths": false,
-    // TailWind CSS
-    "tailwindCSS.experimental.configFile": "tailwind.config.ts",
-    "tailwindCSS.experimental.classRegex": [
-        ["ui:\\s*{([^)]*)\\s*}", "[\"'`]([^\"'`]*).*?[\"'`]"],
-        ["/\\*ui\\*/\\s*{([^;]*)}", ":\\s*[\"'`]([^\"'`]*).*?[\"'`]"]
-    ],
-    // C/C++
-    "C_Cpp.clang_format_style": "file:D:/develop/cpp/.clang-format",
-    "C_Cpp.clang_format_fallbackStyle": "Visual Studio",
-    "C_Cpp.vcFormat.indent.braces": true,
-    "C_Cpp.vcFormat.indent.caseContentsWhenBlock": true,
-    "C_Cpp.vcFormat.indent.caseLabels": true,
-    "C_Cpp.vcFormat.indent.accessSpecifiers": true,
-    "[cpp]": {
-        "editor.defaultFormatter": "ms-vscode.cpptools"
-    },
-    "[c]": {
-        "editor.defaultFormatter": "ms-vscode.cpptools"
-    },
-    // Rust
-    "rust-analyzer.lens.enable": false,
-    "rust-analyzer.inlayHints.parameterHints.enable": false,
-    "[rust]": {
-        "editor.defaultFormatter": "rust-lang.rust-analyzer"
-    },
-    // Go
-    "go.toolsManagement.autoUpdate": true,
-    "go.inlayHints.compositeLiteralFields": true,
-    "go.inlayHints.constantValues": true,
-    "go.inlayHints.functionTypeParameters": true,
-    "go.inlayHints.rangeVariableTypes": true,
-    "go.formatTool": "goimports",
-    "[go]": {
-        "editor.defaultFormatter": "golang.go"
-    },
-    // Python
-    "notebook.lineNumbers": "on",
-    "notebook.output.scrolling": true,
-    "python.terminal.activateEnvironment": false,
-    "python.condaPath": "D:/develop/miniconda/condabin",
-    "[python]": {
-        "editor.codeActionsOnSave": {
-            "source.fixAll.ruff": true,
-            "source.organizeImports.ruff": true
-        },
-        "editor.defaultFormatter": "charliermarsh.ruff"
-    },
-    // Dart
-    "dart.flutterHotReloadOnSave": "all",
-    "dart.showMainCodeLens": false,
-    "dart.showTestCodeLens": false,
-    "dart.previewFlutterUiGuides": true,
-    "dart.showDartPadSampleCodeLens": false,
-    "dart.previewFlutterUiGuidesCustomTracking": true,
-    "[dart]": {
-        "editor.defaultFormatter": "Dart-Code.dart-code",
-        "editor.guides.indentation": false
-    },
-    // JavaScript / TypeScript
-    "js/ts.implicitProjectConfig.target": "ESNext",
-    "[javascript]": {
-    },
-    "[javascriptreact]": {
-    },
-    "[typescript]": {
-    },
-    "[typescriptreact]": {
-    },
-    // CSS
-    "[css]": {
-    },
-    // JSON/JSONC
-    "json.format.enable": false,
-    "[json]": {
-    },
-    "[jsonc]": {
-    },
-    // HTML
-    "[html]": {
-    },
-    // Vue/Volar
-    "vue.codeActions.enabled": false,
-    "vue.codeLens.enabled": false,
-    "vue.autoInsert.bracketSpacing": true,
-    "vue.updateImportsOnFileMove.enabled": true,
-    "vue.server.vitePress.supportMdFile": true,
-    "[vue]": {
-    },
-    // Vim
-    "vim.leader": "<space>",
-    "vim.scroll": 10,
-    "vim.foldfix": true,
-    "vim.hlsearch": true,
-    "vim.useSystemClipboard": true,
-    "vim.highlightedyank.enable": true,
-    "vim.highlightedyank.color": "rgba(230, 230 , 230, 0.7)",
-    "vim.highlightedyank.textColor": "black",
-    "vim.autoSwitchInputMethod.enable": true,
-    "vim.autoSwitchInputMethod.defaultIM": "1033",
-    "vim.autoSwitchInputMethod.obtainIMCmd": "D:/develop/bin/im-select.exe",
-    "vim.autoSwitchInputMethod.switchIMCmd": "D:/develop/bin/im-select.exe {im}",
-    "vim.handleKeys": {
-        "<C-a>": true,
-        "<C-f>": false,
-        "<C-w>": false,
-        "<C-x>": false,
-        "<C-b>": false
-    },
-    "vim.normalModeKeyBindings": [
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+
+  /* dart */
+  "dart.flutterHotReloadOnSave": "all",
+  "dart.showMainCodeLens": false,
+  "dart.showTestCodeLens": false,
+  "dart.previewFlutterUiGuides": true,
+  "dart.showDartPadSampleCodeLens": false,
+  "dart.previewFlutterUiGuidesCustomTracking": true,
+  "[dart]": {
+    "editor.defaultFormatter": "Dart-Code.dart-code",
+    "editor.guides.indentation": false
+  },
+
+  /* javascript & typescript */
+  "js/ts.implicitProjectConfig.target": "ESNext",
+  "[javascript]": {
+  },
+  "[javascriptreact]": {
+  },
+  "[typescript]": {
+  },
+  "[typescriptreact]": {
+  },
+
+  /* css */
+  "[css]": {
+  },
+
+  /* json/jsonc */
+  "json.format.enable": false,
+  "[json]": {
+  },
+  "[jsonc]": {
+  },
+
+  /* html */
+  "[html]": {
+  },
+
+  /* vue/volar */
+  "vue.codeActions.enabled": false,
+  "vue.codeLens.enabled": false,
+  "vue.autoInsert.bracketSpacing": true,
+  "vue.updateImportsOnFileMove.enabled": true,
+  "vue.server.vitePress.supportMdFile": true,
+  "[vue]": {
+  },
+
+  /* vim */
+  "vim.leader": "<space>",
+  "vim.scroll": 10,
+  "vim.foldfix": true,
+  "vim.hlsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.color": "rgba(230, 230 , 230, 0.7)",
+  "vim.highlightedyank.textColor": "black",
+  "vim.autoSwitchInputMethod.enable": true,
+  "vim.autoSwitchInputMethod.defaultIM": "1033",
+  "vim.autoSwitchInputMethod.obtainIMCmd": "D:/develop/bin/im-select.exe",
+  "vim.autoSwitchInputMethod.switchIMCmd": "D:/develop/bin/im-select.exe {im}",
+  "vim.handleKeys": {
+    "<C-a>": true,
+    "<C-f>": false,
+    "<C-w>": false,
+    "<C-x>": false,
+    "<C-b>": false
+  },
+  "vim.normalModeKeyBindings": [
     { "before": ["leader", "w"], "commands": [":w!"] },
     { "before": ["leader", "c"], "commands": [":q!"] },
     { "before": ["leader", "x"], "commands": [":x!"] },
     // { "before": ["leader", "q"], "commands": ["workbench.action.closeActiveEditor"] },
     { "before": ["leader", "/"], "commands": ["editor.action.commentLine"] },
-    // { "before": ["leader", "e"], "commands": ["workbench.explorer.fileView.focus"] }, // IT WILL CONFILICT WHILE INSERTING SPACE IN FILE EXPLORER!!!
+    // { "before": ["leader", "e"], "commands": ["workbench.explorer.fileView.focus"] }, // it will confilict while inserting space in file explorer!!!
     { "before": ["leader", "z"], "commands": ["workbench.action.toggleZenMode"] },
     { "before": ["leader", "d", "b"], "commands": ["editor.debug.action.toggleBreakpoint"] },
     { "before": ["leader", "f", "w"], "commands": ["actions.find"] },
@@ -327,9 +351,9 @@
     { "before": ["<C-l>"], "after": ["$"] },
     { "before": ["<C-c>"], "commands": [":nohl"] }
   ],
-    "vim.insertModeKeyBindings": [{ "before": ["j", "k"], "after": ["<Esc>"] }],
-    "vim.visualModeKeyBindings": [
-    // SUPPORT MULTI LINES COMMENT
+  "vim.insertModeKeyBindings": [{ "before": ["j", "k"], "after": ["<Esc>"] }],
+  "vim.visualModeKeyBindings": [
+    // support multi lines comment
     { "before": ["leader", "/"], "commands": ["editor.action.commentLine"] },
     { "before": ["<Tab>"], "after": [">", ">", "<Esc>"] },
     { "before": ["<S-Tab>"], "after": ["<", "<", "<Esc>"] },
