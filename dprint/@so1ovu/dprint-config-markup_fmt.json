@@ -1,17 +1,17 @@
 {
-    "markup": {
-        "closingBracketSameLine": true,
-        "component.selfClosing": true,
+  "markup": {
+    "closingBracketSameLine": true,
+    "component.selfClosing": true,
 
-        "formatComments": true,
+    "formatComments": true,
 
-        "indentWidth": 4,
+    "indentWidth": 2,
 
-        "printWidth": 88,
+    "printWidth": 88,
 
-        "vBindStyle": "short",
-        "vForDelimiterStyle": "in",
-        "vOnStyle": "short",
-        "vSlotStyle": "short"
-    }
+    "vBindStyle": "short",
+    "vForDelimiterStyle": "in",
+    "vOnStyle": "short",
+    "vSlotStyle": "short"
+  }
 }

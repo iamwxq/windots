@@ -1,19 +1,19 @@
 {
-    "malva": {
-        "hexCase": "lower",
+  "malva": {
+    "hexCase": "lower",
 
-        "indentWidth": 4,
+    "indentWidth": 2,
 
-        "lineBreak": "lf",
-        "linebreakInPseudoParens": true,
+    "lineBreak": "lf",
+    "linebreakInPseudoParens": true,
 
-        "operatorLinebreak": "before",
+    "operatorLinebreak": "before",
 
-        "padComments": true,
-        "printWidth": 88,
+    "padComments": true,
+    "printWidth": 88,
 
-        "quotes": "preferDouble",
+    "quotes": "preferDouble",
 
-        "useTabs": false
-    }
+    "useTabs": false
+  }
 }

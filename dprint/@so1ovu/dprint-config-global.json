@@ -1,9 +1,9 @@
 {
-    "indentWidth": 4,
+  "indentWidth": 2,
 
-    "lineWidth": 88,
+  "lineWidth": 88,
 
-    "newLineKind": "lf",
+  "newLineKind": "lf",
 
-    "useTabs": false
+  "useTabs": false
 }
