@@ -109,6 +109,16 @@
     "source.organizeImports": false
   },
 
+  /* codesnap */
+  "codesnap.containerPadding": "0em",
+  "codesnap.backgroundColor": "#abb8c3",
+  "codesnap.boxShadow": "rgba(0, 0, 0, 0) 0px 20px 68px",
+  "codesnap.transparentBackground": true,
+
+  /* color highlight */
+  "color-highlight.matchRgbWithNoFunction": false,
+  "color-highlight.matchWords": true,
+
   /* colorscheme */
   "catppuccin.accentColor": "blue",
   "catppuccin.boldKeywords": false,
@@ -124,6 +134,14 @@
     }
   },
 
+  /* errorlens */
+  "errorLens.enabledDiagnosticLevels": ["warning", "error"],
+  "errorLens.excludeBySource": ["eslint", "scss", "css"],
+  "errorLens.gutterIconsEnabled": true,
+  "errorLens.gutterIconsFollowCursorOverride": false,
+  "errorLens.gutterIconSet": "defaultOutline",
+  "errorLens.messageBackgroundMode": "none",
+
   /* eslint */
   "eslint.run": "onType",
   "eslint.probe": [
@@ -136,23 +154,29 @@
     "markdown"
   ],
 
-  /* dprint */
-  "dprint.verbose": false,
-
-  /* errorlens */
-  "errorLens.enabledDiagnosticLevels": ["warning", "error"],
-  "errorLens.excludeBySource": ["eslint", "scss", "css"],
-  "errorLens.gutterIconsEnabled": true,
-  "errorLens.gutterIconsFollowCursorOverride": false,
-  "errorLens.gutterIconSet": "defaultOutline",
-  "errorLens.messageBackgroundMode": "none",
-
   /* evenbettertoml */
   "evenBetterToml.formatter.allowedBlankLines": 1,
   "evenBetterToml.formatter.arrayAutoCollapse": true,
   "evenBetterToml.formatter.columnWidth": 88,
   "evenBetterToml.schema.enabled": true,
   "evenBetterToml.schema.links": true,
+
+  /* dprint */
+  "dprint.verbose": false,
+
+  /* lingma */
+  "Lingma.methodQuickOperation": false,
+
+  /* live server */
+  "liveServer.settings.donotShowInfoMsg": true,
+
+  /* markdown-preview */
+  "markdown-preview-enhanced.codeBlockTheme": "one-dark.css",
+  "markdown-preview-enhanced.mermaidTheme": "dark",
+
+  /* path inteliisense */
+  "javascript.suggest.paths": false,
+  "typescript.suggest.paths": false,
 
   /* prettier */
   "prettier.enable": true,
@@ -171,40 +195,16 @@
   "prettier.singleAttributePerLine": false,
   "prettier.vueIndentScriptAndStyle": false,
 
-  /* live server */
-  "liveServer.settings.donotShowInfoMsg": true,
-
-  /* codesnap */
-  "codesnap.containerPadding": "0em",
-  "codesnap.backgroundColor": "#abb8c3",
-  "codesnap.boxShadow": "rgba(0, 0, 0, 0) 0px 20px 68px",
-  "codesnap.transparentBackground": true,
-
-  /* color highlight */
-  "color-highlight.matchRgbWithNoFunction": false,
-  "color-highlight.matchWords": true,
-
-  /* lingma */
-  "Lingma.methodQuickOperation": false,
-
-  /* markdown-preview */
-  "markdown-preview-enhanced.codeBlockTheme": "one-dark.css",
-  "markdown-preview-enhanced.mermaidTheme": "dark",
-
-  /* todo tree */
-  "todo-tree.tree.showCurrentScanMode": false,
-  "todo-tree.tree.showCountsInTree": true,
-
-  /* path inteliisense */
-  "javascript.suggest.paths": false,
-  "typescript.suggest.paths": false,
-
   /* tailwind css */
   "tailwindCSS.experimental.configFile": "tailwind.config.ts",
   "tailwindCSS.experimental.classRegex": [
     ["ui:\\s*{([^)]*)\\s*}", "[\"'`]([^\"'`]*).*?[\"'`]"],
     ["/\\*ui\\*/\\s*{([^;]*)}", ":\\s*[\"'`]([^\"'`]*).*?[\"'`]"]
   ],
+
+  /* todo tree */
+  "todo-tree.tree.showCurrentScanMode": false,
+  "todo-tree.tree.showCountsInTree": true,
 
   /* c/c++ */
   "C_Cpp.clang_format_style": "file:D:/develop/cpp/.clang-format",
@@ -220,11 +220,16 @@
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
 
-  /* rust */
-  "rust-analyzer.lens.enable": false,
-  "rust-analyzer.inlayHints.parameterHints.enable": false,
-  "[rust]": {
-    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  /* dart */
+  "dart.flutterHotReloadOnSave": "all",
+  "dart.showMainCodeLens": false,
+  "dart.showTestCodeLens": false,
+  "dart.previewFlutterUiGuides": true,
+  "dart.showDartPadSampleCodeLens": false,
+  "dart.previewFlutterUiGuidesCustomTracking": true,
+  "[dart]": {
+    "editor.defaultFormatter": "Dart-Code.dart-code",
+    "editor.guides.indentation": false
   },
 
   /* go */
@@ -237,6 +242,12 @@
   "[go]": {
     "editor.defaultFormatter": "golang.go"
   },
+
+  /* javascript & typescript */
+  "js/ts.implicitProjectConfig.target": "ESNext",
+
+  /* json/jsonc */
+  "json.format.enable": false,
 
   /* python */
   "notebook.lineNumbers": "on",
@@ -251,45 +262,14 @@
     "editor.defaultFormatter": "charliermarsh.ruff"
   },
 
-  /* dart */
-  "dart.flutterHotReloadOnSave": "all",
-  "dart.showMainCodeLens": false,
-  "dart.showTestCodeLens": false,
-  "dart.previewFlutterUiGuides": true,
-  "dart.showDartPadSampleCodeLens": false,
-  "dart.previewFlutterUiGuidesCustomTracking": true,
-  "[dart]": {
-    "editor.defaultFormatter": "Dart-Code.dart-code",
-    "editor.guides.indentation": false
+  /* rust */
+  "rust-analyzer.lens.enable": false,
+  "rust-analyzer.inlayHints.parameterHints.enable": false,
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
 
-  /* javascript & typescript */
-  "js/ts.implicitProjectConfig.target": "ESNext",
-  "[javascript]": {
-  },
-  "[javascriptreact]": {
-  },
-  "[typescript]": {
-  },
-  "[typescriptreact]": {
-  },
-
-  /* css */
-  "[css]": {
-  },
-
-  /* json/jsonc */
-  "json.format.enable": false,
-  "[json]": {
-  },
-  "[jsonc]": {
-  },
-
-  /* html */
-  "[html]": {
-  },
-
-  /* vue/volar */
+  /* vue */
   "vue.codeActions.enabled": false,
   "vue.codeLens.enabled": false,
   "vue.autoInsert.bracketSpacing": true,
