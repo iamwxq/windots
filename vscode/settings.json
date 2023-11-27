@@ -40,11 +40,10 @@
     "node_modules/*": true
   },
   // following three configs can get rid of the warning of downloading json schema failed
-  "http.proxy": "http://127.0.0.1:23088",
+  "http.proxy": "http://127.0.0.1:23088", // 'http.proxy' can be set to ""
   "http.proxyAuthorization": null,
   "http.proxyStrictSSL": false,
-  // and DO NOT set this config, whatever 'on' or 'off'
-  // "http.proxySupport": "on",
+  // "http.proxySupport": "on", // and DO NOT set this config, whatever 'on' or 'off'
   "security.allowedUNCHosts": ["wsl.localhost"],
   "security.workspace.trust.untrustedFiles": "open",
 
@@ -102,9 +101,9 @@
   "editor.formatOnType": false,
   "editor.guides.bracketPairs": false,
   "editor.quickSuggestions": {
+    "comments": "off",
     "other": "on",
-    "strings": "off",
-    "comments": "off"
+    "strings": "off"
   },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
@@ -112,21 +111,18 @@
   },
 
   /* codesnap */
-  "codesnap.containerPadding": "0em",
   "codesnap.backgroundColor": "#abb8c3",
   "codesnap.boxShadow": "rgba(0, 0, 0, 0) 0px 20px 68px",
+  "codesnap.containerPadding": "0em",
   "codesnap.transparentBackground": true,
 
   /* color highlight */
   "color-highlight.matchRgbWithNoFunction": false,
   "color-highlight.matchWords": true,
 
-  /* colorscheme */
+  /* colorscheme - catppuccin */
   "catppuccin.accentColor": "blue",
   "catppuccin.boldKeywords": false,
-  "catppuccin.italicKeywords": false,
-  "catppuccin.italicComments": false,
-  "catppuccin.extraBordersEnabled": false,
   "catppuccin.bracketMode": "neovim",
   "catppuccin.colorOverrides": {
     "mocha": {
@@ -135,6 +131,9 @@
       "crust": "#000000"
     }
   },
+  "catppuccin.extraBordersEnabled": false,
+  "catppuccin.italicKeywords": false,
+  "catppuccin.italicComments": false,
 
   /* errorlens */
   "errorLens.enabledDiagnosticLevels": ["warning", "error"],
@@ -145,19 +144,19 @@
   "errorLens.messageBackgroundMode": "none",
 
   /* eslint */
-  "eslint.run": "onType",
-  "eslint.runtime": "node",
   "eslint.execArgv": ["--max_old_space_size=8192"],
   "eslint.probe": [
+    "html",
+    "markdown",
+    "mdx",
     "javascript",
     "javascriptreact",
     "typescript",
     "typescriptreact",
-    "html",
-    "vue",
-    "markdown",
-    "mdx"
+    "vue"
   ],
+  "eslint.run": "onType",
+  "eslint.runtime": "node",
 
   /* evenbettertoml */
   "evenBetterToml.formatter.allowedBlankLines": 1,
@@ -244,11 +243,8 @@
   "C_Cpp.clang_format_path": "D:/develop/mingw64/bin/clang-format.exe",
   "C_Cpp.clang_format_style": "file:C:/Users/whoev/.clang-format",
   "C_Cpp.clang_format_sortIncludes": true,
-  // "C_Cpp.codeAnalysis.clangTidy.enabled": false,
-  // "C_Cpp.default.compilerPath": "D:/develop/mingw64/bin/clang++.exe",
   "C_Cpp.default.cppStandard": "c++17",
   "C_Cpp.default.cStandard": "c17",
-  // "C_Cpp.default.intelliSenseMode": "windows-clang-x64",
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools",
     "editor.tabSize": 4
@@ -358,16 +354,16 @@
     { "before": ["leader", "f", "f"], "commands": ["workbench.action.quickOpen"] },
     { "before": ["leader", "l", "a"], "commands": ["editor.action.quickFix"] },
     { "before": ["leader", "l", "s"], "commands": ["editor.action.triggerSuggest"] },
-    { "before": ["[", "d"], "commands": ["editor.action.marker.prevInFiles"] },
-    { "before": ["]", "d"], "commands": ["editor.action.marker.nextInFiles"] },
-    { "before": ["K"], "commands": ["editor.action.showHover"] },
-    { "before": ["\\"], "commands": ["workbench.action.splitEditor"] },
-    { "before": ["|"], "commands": ["workbench.action.splitEditorDown"] },
     { "before": ["leader", "1"], "commands": ["workbench.action.focusFirstEditorGroup"] },
     { "before": ["leader", "2"], "commands": ["workbench.action.focusSecondEditorGroup"] },
     { "before": ["leader", "3"], "commands": ["workbench.action.focusThirdEditorGroup"] },
     { "before": ["leader", "4"], "commands": ["workbench.action.focusFourthEditorGroup"] },
     { "before": ["leader", "5"], "commands": ["workbench.action.focusFifthEditorGroup"] },
+    { "before": ["[", "d"], "commands": ["editor.action.marker.prevInFiles"] },
+    { "before": ["]", "d"], "commands": ["editor.action.marker.nextInFiles"] },
+    { "before": ["K"], "commands": ["editor.action.showHover"] },
+    { "before": ["\\"], "commands": ["workbench.action.splitEditor"] },
+    { "before": ["|"], "commands": ["workbench.action.splitEditorDown"] },
     { "before": ["H"], "commands": ["extension.vim_ctrl+pageup"] },
     { "before": ["L"], "commands": ["extension.vim_ctrl+pagedown"] },
     { "before": ["<Tab>"], "after": [">", ">"] },
@@ -378,8 +374,7 @@
     { "before": ["<C-c>"], "commands": [":nohl"] }
   ],
   "vim.visualModeKeyBindings": [
-    // support multi lines comment
-    { "before": ["leader", "/"], "commands": ["editor.action.commentLine"] },
+    { "before": ["leader", "/"], "commands": ["editor.action.commentLine"] }, // support multi-lines comment
     { "before": ["<Tab>"], "after": [">", ">", "<Esc>"] },
     { "before": ["<S-Tab>"], "after": ["<", "<", "<Esc>"] },
     { "before": ["<C-a>"], "after": ["<Esc>", "<C-o>", "<C-o>"] }
