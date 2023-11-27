@@ -41,11 +41,10 @@
   "files.readonlyInclude": {
     "node_modules/*": true
   },
-  // following three configs can get rid of the warning of downloading json schema failed
-  "http.proxy": "http://127.0.0.1:23088", // 'http.proxy' can be set to ""
+  "http.proxy": "http://127.0.0.1:23088",
   "http.proxyAuthorization": null,
   "http.proxyStrictSSL": false,
-  // "http.proxySupport": "on", // and DO NOT set this config, whatever 'on' or 'off'
+  // "http.proxySupport": "off", // DO NOT set this config, whatever 'on' or 'off'
   "security.allowedUNCHosts": ["wsl.localhost"],
   "security.workspace.trust.untrustedFiles": "open",
 
@@ -140,10 +139,10 @@
   /* errorlens */
   "errorLens.enabledDiagnosticLevels": ["warning", "error"],
   "errorLens.excludeBySource": ["eslint"],
-  "errorLens.gutterIconsEnabled": true,
+  "errorLens.gutterIconsEnabled": false,
   "errorLens.gutterIconsFollowCursorOverride": false,
   "errorLens.gutterIconSet": "defaultOutline",
-  "errorLens.messageBackgroundMode": "none",
+  "errorLens.messageBackgroundMode": "line",
 
   /* eslint */
   "eslint.execArgv": ["--max_old_space_size=8192"],
@@ -245,7 +244,7 @@
   "C_Cpp.clang_format_path": "D:/develop/mingw64/bin/clang-format.exe",
   "C_Cpp.clang_format_style": "file:C:/Users/whoev/.clang-format",
   "C_Cpp.clang_format_sortIncludes": true,
-  "C_Cpp.default.cppStandard": "c++17",
+  "C_Cpp.default.cppStandard": "c++23",
   "C_Cpp.default.cStandard": "c17",
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools",
