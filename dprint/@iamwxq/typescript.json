@@ -31,7 +31,6 @@
 
     "enumDeclaration.memberSpacing": "newLine",
     "exportDeclaration.spaceSurroundingNamedExports": true,
-    "exportDeclaration.sortNamedExports": "caseSensitive",
 
     "forInStatement.spaceAfterForKeyword": true,
     "forOfStatement.spaceAfterForKeyword": true,
@@ -43,20 +42,17 @@
     "getAccessor.spaceBeforeParentheses": false,
 
     "ifStatement.spaceAfterIfKeyword": true,
-    "importDeclaration.sortNamedImports": "caseSensitive",
     "importDeclaration.spaceSurroundingNamedImports": true,
 
-    "jsx.bracketPosition": "sameLine",
+    "jsx.bracketPosition": "nextLine",
     "jsxExpressionContainer.spaceSurroundingExpression": false,
     "jsx.forceNewLinesSurroundingContent": false,
-    "jsx.quoteStyle": "preferSingle",
+    "jsx.quoteStyle": "preferDouble",
     "jsx.multiLineParens": "prefer",
     "jsxSelfClosingElement.spaceBeforeSlash": true,
 
     "memberExpression.linePerExpression": true,
     "method.spaceBeforeParentheses": false,
-    "module.sortImportDeclarations": "caseSensitive",
-    "module.sortExportDeclarations": "caseSensitive",
 
     "setAccessor.spaceBeforeParentheses": false,
     "spaceSurroundingProperties": true,

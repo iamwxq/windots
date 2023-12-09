@@ -9,13 +9,13 @@
   "workbench.activityBar.location": "side",
   "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.editor.enablePreview": false,
-  "workbench.editor.tabCloseButton": "right",
   "workbench.editor.closeOnFileDelete": true,
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.limit.value": 5,
   "workbench.editor.showTabs": "multiple",
+  "workbench.editor.tabActionLocation": "right",
   "workbench.iconTheme": "catppuccin-perfect-mocha",
   "workbench.layoutControl.enabled": false,
   "workbench.list.smoothScrolling": true,
@@ -33,7 +33,7 @@
   "emmet.triggerExpansionOnTab": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  "extensions.ignoreRecommendations": true,
+  "extensions.ignoreRecommendations": false,
   "files.eol": "\n",
   "files.insertFinalNewline": true,
   "files.simpleDialog.enable": true,
@@ -54,7 +54,7 @@
   "terminal.integrated.cursorStyle": "block",
   "terminal.integrated.defaultProfile.linux": "zsh",
   "terminal.integrated.defaultProfile.windows": "PowerShell",
-  "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono, MiSans, 霞鹜新晰黑, Microsoft Yahei, monospace",
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono, 霞鹜新晰黑, Microsoft Yahei, monospace",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.shellIntegration.decorationsEnabled": "never",
@@ -66,17 +66,18 @@
   "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.enabled": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.organizeImports": false
+    "quickfix.biome": "explicit",
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit",
+    "source.organizeImports.biome": "explicit"
   },
-  "editor.colorDecorators": false, // since we already have 'color highlight' extension
+  "editor.colorDecorators": true, // since we already have 'color highlight' extension
   "editor.cursorBlinking": "blink",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.detectIndentation": false,
   "editor.defaultColorDecorators": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.find.addExtraSpaceOnTop": false,
-  "editor.fontFamily": "FiraCode Nerd Font Mono, MiSans, 霞鹜新晰黑, Microsoft Yahei, monospace",
+  "editor.fontFamily": "FiraCode Nerd Font Mono, 霞鹜新晰黑, Microsoft Yahei, monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.fontWeight": "normal",
@@ -89,12 +90,13 @@
   "editor.inlayHints.padding": true,
   "editor.inlineSuggest.enabled": true,
   "editor.linkedEditing": true,
+  "editor.lineNumbers": "relative",
   "editor.minimap.enabled": false,
   "editor.minimap.maxColumn": 80,
   "editor.minimap.scale": 2,
   "editor.minimap.size": "fit",
   "editor.minimap.renderCharacters": true,
-  "editor.occurrencesHighlight": true,
+  "editor.occurrencesHighlight": "singleFile",
   "editor.quickSuggestions": {
     "comments": "off",
     "other": "on",
@@ -111,6 +113,14 @@
   "editor.tabSize": 2,
   "editor.unicodeHighlight.invisibleCharacters": false,
 
+  /* style validate */
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+
+  /* zen mode */
+  "zenMode.hideLineNumbers": false,
+
   /* codesnap */
   "codesnap.backgroundColor": "#abb8c3",
   "codesnap.boxShadow": "rgba(0, 0, 0, 0) 0px 20px 68px",
@@ -118,7 +128,8 @@
   "codesnap.transparentBackground": true,
 
   /* color highlight */
-  "color-highlight.matchRgbWithNoFunction": false,
+  "color-highlight.matchRgbWithNoFunction": true,
+  "color-highlight.markerType": "underline",
   "color-highlight.matchWords": true,
 
   /* colorscheme - catppuccin */
@@ -132,6 +143,12 @@
       "crust": "#000000"
     }
   },
+  // "catppuccin.customUIColors": {
+  //   "mocha": {
+  //     "tab.hoverBackground": "#000000",
+  //     "tab.unfocusedInactiveBackground": "#000000"
+  //   }
+  // },
   "catppuccin.extraBordersEnabled": false,
   "catppuccin.italicKeywords": false,
   "catppuccin.italicComments": false,
@@ -142,7 +159,7 @@
   "errorLens.gutterIconsEnabled": false,
   "errorLens.gutterIconsFollowCursorOverride": false,
   "errorLens.gutterIconSet": "defaultOutline",
-  "errorLens.messageBackgroundMode": "line",
+  "errorLens.messageBackgroundMode": "none",
 
   /* eslint */
   "eslint.execArgv": ["--max_old_space_size=8192"],
@@ -168,6 +185,13 @@
 
   /* dprint */
   "dprint.verbose": false,
+
+  /* gitlens */
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.showWelcomeOnInstall": false,
+  "gitlens.showWhatsNewAfterUpgrades": false,
 
   /* leetcode */
   "leetcode.enableSideMode": false,
@@ -240,11 +264,10 @@
   "todo-tree.tree.showCountsInTree": true,
 
   /* c/c++ */
-  "C_Cpp.clang_format_fallbackStyle": "LLVM",
+  "C_Cpp.clang_format_fallbackStyle": "Google",
   "C_Cpp.clang_format_path": "D:/develop/mingw64/bin/clang-format.exe",
   "C_Cpp.clang_format_style": "file:C:/Users/whoev/.clang-format",
-  "C_Cpp.clang_format_sortIncludes": true,
-  "C_Cpp.default.cppStandard": "c++23",
+  "C_Cpp.default.cppStandard": "c++20",
   "C_Cpp.default.cStandard": "c17",
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools",
@@ -268,13 +291,32 @@
     "editor.tabSize": 4
   },
 
+  /* deno */
+  "deno.cacheOnSave": true,
+
   /* go */
+  "go.enableCodeLens": {
+    "runtest": false
+  },
+  "go.formatTool": "gofumpt",
+  "go.inlayHints.compositeLiteralFields": false,
+  "go.inlayHints.constantValues": false,
+  "go.inlayHints.functionTypeParameters": false,
+  "go.inlayHints.rangeVariableTypes": false,
+  "go.inlayHints.assignVariableTypes": false,
+  "go.inlayHints.compositeLiteralTypes": false,
+  "go.inlayHints.parameterNames": false,
+  "gopls": {
+    "ui.codelenses": {
+      "generate": false,
+      "upgrade_dependency": false,
+      "tidy": false,
+      "vendor": false
+    },
+    "ui.semanticTokens": true,
+  },
   "go.toolsManagement.autoUpdate": true,
-  "go.inlayHints.compositeLiteralFields": true,
-  "go.inlayHints.constantValues": true,
-  "go.inlayHints.functionTypeParameters": true,
-  "go.inlayHints.rangeVariableTypes": true,
-  "go.formatTool": "goimports",
+  "go.showWelcome": false,
   "[go]": {
     "editor.defaultFormatter": "golang.go",
     "editor.tabSize": 4
@@ -298,8 +340,8 @@
   "python.condaPath": "D:/develop/miniconda/condabin",
   "[python]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll.ruff": true,
-      "source.organizeImports.ruff": true
+      "source.fixAll.ruff": "explicit",
+      "source.organizeImports.ruff": "explicit"
     },
     "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.tabSize": 4
@@ -307,7 +349,7 @@
 
   /* rust */
   "rust-analyzer.lens.enable": false,
-  "rust-analyzer.inlayHints.parameterHints.enable": false,
+  "rust-analyzer.inlayHints.closingBraceHints.enable": false,
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer",
     "editor.tabSize": 4
@@ -321,9 +363,8 @@
   "vue.server.vitePress.supportMdFile": true,
 
   /* vim */
-  "vim.scroll": 16,
   "vim.foldfix": true,
-  "vim.hlsearch": true,
+  "vim.hlsearch": false,
   "vim.leader": "<space>",
   "vim.useSystemClipboard": true,
   "vim.highlightedyank.enable": true,
@@ -344,14 +385,11 @@
   "vim.insertModeKeyBindings": [{ "before": ["j", "k"], "after": ["<Esc>"] }],
   "vim.normalModeKeyBindings": [
     { "before": ["leader", "w"], "commands": [":w!"] },
-    { "before": ["leader", "c"], "commands": [":q!"] },
+    { "before": ["leader", "q"], "commands": [":q!"] },
     { "before": ["leader", "x"], "commands": [":x!"] },
-    // { "before": ["leader", "q"], "commands": ["workbench.action.closeActiveEditor"] },
-    { "before": ["leader", "/"], "commands": ["editor.action.commentLine"] },
-    // { "before": ["leader", "e"], "commands": ["workbench.explorer.fileView.focus"] }, // it will confilict while inserting space in file explorer!!!
+    { "before": ["leader", "/"], "after": ["g", "c", "c"] },
     { "before": ["leader", "z"], "commands": ["workbench.action.toggleZenMode"] },
     { "before": ["leader", "d", "b"], "commands": ["editor.debug.action.toggleBreakpoint"] },
-    { "before": ["leader", "f", "w"], "commands": ["actions.find"] },
     { "before": ["leader", "f", "f"], "commands": ["workbench.action.quickOpen"] },
     { "before": ["leader", "l", "a"], "commands": ["editor.action.quickFix"] },
     { "before": ["leader", "l", "s"], "commands": ["editor.action.triggerSuggest"] },
@@ -362,22 +400,21 @@
     { "before": ["leader", "5"], "commands": ["workbench.action.focusFifthEditorGroup"] },
     { "before": ["[", "d"], "commands": ["editor.action.marker.prevInFiles"] },
     { "before": ["]", "d"], "commands": ["editor.action.marker.nextInFiles"] },
+    { "before": ["\\"], "commands": ["workbench.action.splitEditorDown"] },
+    { "before": ["|"], "commands": ["workbench.action.splitEditor"] },
     { "before": ["K"], "commands": ["editor.action.showHover"] },
-    { "before": ["\\"], "commands": ["workbench.action.splitEditor"] },
-    { "before": ["|"], "commands": ["workbench.action.splitEditorDown"] },
     { "before": ["H"], "commands": ["extension.vim_ctrl+pageup"] },
     { "before": ["L"], "commands": ["extension.vim_ctrl+pagedown"] },
-    { "before": ["<Tab>"], "after": [">", ">"] },
-    { "before": ["<S-Tab>"], "after": ["<", "<"] },
+    { "before": ["n"], "after": ["n", "z", "z"] },
+    { "before": ["N"], "after": ["N", "z", "z"] },
     { "before": ["<C-a>"], "after": ["g", "g", "V", "G"] },
-    { "before": ["<C-h>"], "after": ["^"] },
-    { "before": ["<C-l>"], "after": ["$"] },
-    { "before": ["<C-c>"], "commands": [":nohl"] }
+    { "before": ["<S-Tab>"], "after": ["<", "<"] },
+    { "before": ["<Tab>"], "after": [">", ">"] },
   ],
   "vim.visualModeKeyBindings": [
-    { "before": ["leader", "/"], "commands": ["editor.action.commentLine"] }, // support multi-lines comment
+    { "before": ["leader", "/"], "after": ["g", "c"] },
+    { "before": ["<C-a>"], "after": ["<Esc>", "<C-o>", "<C-o>"] },
     { "before": ["<Tab>"], "after": [">", ">", "<Esc>"] },
-    { "before": ["<S-Tab>"], "after": ["<", "<", "<Esc>"] },
-    { "before": ["<C-a>"], "after": ["<Esc>", "<C-o>", "<C-o>"] }
+    { "before": ["<S-Tab>"], "after": ["<", "<", "<Esc>"] }
   ]
 }

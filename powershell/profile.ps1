@@ -1,6 +1,3 @@
-Set-Alias -Name ls -Value Get-ChildItemPretty
-Set-Alias -Name ll -Value Get-ChildItemPretty
-Set-Alias -Name la -Value Get-ChildItemPretty
 Set-Alias -Name touch -Value New-File
 
 # 目录变为无色
@@ -48,21 +45,4 @@ function New-File {
 
     Write-Verbose "Creating new file '$Name'"
     New-Item -ItemType File -Name $Name -Path $PWD | Out-Null
-}
-
-function Get-ChildItemPretty {
-    <#
-    .SYNOPSIS
-        Drop in replacement for Get-ChildItem that lazy loads the Terminal-Icons Module first. This improves profile start up time dramatically.
-        Alias: ls, ll, la, l
-    #>
-    [CmdletBinding()]
-    param (
-        [Parameter(Mandatory = $false, Position = 0)]
-        [string]$Path = $PWD
-    )
-    Write-Verbose "Importing Terminal-Icons module"
-    Import-Module Terminal-Icons -ErrorAction SilentlyContinue
-    Write-Verbose "Showing children of '$Path'"
-    Get-ChildItem $Path | Format-Table -AutoSize
 }

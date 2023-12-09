@@ -3,11 +3,11 @@ add_newline = false
 palette = "catppuccin_mocha"
 
 [character]
-success_symbol = "[❯](bold green)"
+success_symbol = "[➜ ](bold green)"
 error_symbol = "[ ](bold red)"
 
 [cmd_duration]
-min_time = 200
+min_time = 500
 show_milliseconds = true
 
 [git_metrics]

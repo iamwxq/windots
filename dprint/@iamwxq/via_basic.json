@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "C:/Users/whoev/.dprint/@iamwxq/global.json",
+    "C:/Users/whoev/.dprint/@iamwxq/json.json",
+    "C:/Users/whoev/.dprint/@iamwxq/malva.json",
+    "C:/Users/whoev/.dprint/@iamwxq/markdown.json",
+    "C:/Users/whoev/.dprint/@iamwxq/markup_fmt.json",
+    "C:/Users/whoev/.dprint/@iamwxq/toml.json",
+    "C:/Users/whoev/.dprint/@iamwxq/typescript.json"
+  ]
+}
