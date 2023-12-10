@@ -6,7 +6,7 @@
     "preferHanging": false,
     "preferSingleLine": false,
     "quoteProps": "asNeeded",
-    "quoteStyle": "preferSingle",
+    "quoteStyle": "preferDouble",
     "semiColons": "always",
     "singleBodyPosition": "nextLine",
     "spaceAround": false,
