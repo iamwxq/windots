@@ -7,7 +7,8 @@
 
     "indentWidth": 2,
 
-    "printWidth": 88,
+    "html.scriptIndent": true,
+    "html.styleIndent": true,
 
     "vBindStyle": "short",
     "vForDelimiterStyle": "in",

@@ -1,14 +1,20 @@
 {
   "biome":{
+    "arrowParentheses": "always",
+
+    "bracketSameLine": true,
+    "bracketSpacing": true,
+
     "lineEnding": "lf",
+
     "indentSize": 2,
     "indentStyle": "space",
-    "semicolons": "always",
-    "quoteStyle": "double",
-    "trailingComma": "all",
-    "arrowParentheses": "always",
+
     "quoteProperties": "asNeeded",
-    "bracketSameLine": true,
-    "bracketSpacing": true
+    "quoteStyle": "double",
+
+    "semicolons": "always",
+
+    "trailingComma": "all"
   }
 }

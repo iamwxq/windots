@@ -1,5 +1,7 @@
 {
   "malva": {
+    "blockSelectorLinebreak": "consistent",
+
     "hexCase": "lower",
 
     "indentWidth": 2,
@@ -7,12 +9,14 @@
     "lineBreak": "lf",
     "linebreakInPseudoParens": true,
 
-    "operatorLinebreak": "before",
+    "omitNumberLeadingZero": false,
+    "operatorLinebreak": "after",
 
     "padComments": true,
-    "printWidth": 88,
 
     "quotes": "preferDouble",
+
+    "trailingComma": false,
 
     "useTabs": false
   }

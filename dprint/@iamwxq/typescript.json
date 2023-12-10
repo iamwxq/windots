@@ -10,7 +10,7 @@
     "semiColons": "always",
     "singleBodyPosition": "nextLine",
     "spaceAround": false,
-    "trailingCommas": "never",
+    "trailingCommas": "onlyMultiLine",
     "useBraces": "preferNone",
 
     "arrowFunction.bracePosition": "sameLineUnlessHanging",
@@ -44,7 +44,7 @@
     "ifStatement.spaceAfterIfKeyword": true,
     "importDeclaration.spaceSurroundingNamedImports": true,
 
-    "jsx.bracketPosition": "nextLine",
+    "jsx.bracketPosition": "sameLine",
     "jsxExpressionContainer.spaceSurroundingExpression": false,
     "jsx.forceNewLinesSurroundingContent": false,
     "jsx.quoteStyle": "preferDouble",
