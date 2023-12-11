@@ -13,7 +13,7 @@
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
-  "workbench.editor.limit.value": 5,
+  "workbench.editor.limit.value": 7,
   "workbench.editor.showTabs": "multiple",
   "workbench.editor.tabActionLocation": "right",
   "workbench.iconTheme": "catppuccin-perfect-mocha",
@@ -212,7 +212,12 @@
 
   /* markdown-preview */
   "markdown-preview-enhanced.codeBlockTheme": "one-dark.css",
-  "markdown-preview-enhanced.mermaidTheme": "dark",
+  "markdown-preview-enhanced.enableExtendedTableSyntax": true,
+  "markdown-preview-enhanced.enableHTML5Embed": true,
+  "markdown-preview-enhanced.enablePreviewZenMode": true,
+  "markdown-preview-enhanced.enableTypographer": true,
+  "markdown-preview-enhanced.HTML5EmbedIsAllowedHttp": true,
+  "markdown-preview-enhanced.HTML5EmbedUseLinkSyntax": true,
 
   /* mdx */
   "mdx.server.enable": true,
@@ -252,11 +257,10 @@
   "prettier.vueIndentScriptAndStyle": false,
   "prettier.withNodeModules": false,
 
-  /* tailwind css */
+  /* tailwind css*/
   "tailwindCSS.experimental.configFile": "tailwind.config.ts",
   "tailwindCSS.experimental.classRegex": [
-    ["ui:\\s*{([^)]*)\\s*}", "[\"'`]([^\"'`]*).*?[\"'`]"],
-    ["/\\*ui\\*/\\s*{([^;]*)}", ":\\s*[\"'`]([^\"'`]*).*?[\"'`]"]
+    ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"] // support `clsx`
   ],
 
   /* todo tree */
@@ -313,7 +317,7 @@
       "tidy": false,
       "vendor": false
     },
-    "ui.semanticTokens": true,
+    "ui.semanticTokens": true
   },
   "go.toolsManagement.autoUpdate": true,
   "go.showWelcome": false,
@@ -366,6 +370,7 @@
   "vim.foldfix": true,
   "vim.hlsearch": false,
   "vim.leader": "<space>",
+  "vim.smartRelativeLine": true,
   "vim.useSystemClipboard": true,
   "vim.highlightedyank.enable": true,
   "vim.highlightedyank.textColor": "black",
@@ -409,7 +414,7 @@
     { "before": ["N"], "after": ["N", "z", "z"] },
     { "before": ["<C-a>"], "after": ["g", "g", "V", "G"] },
     { "before": ["<S-Tab>"], "after": ["<", "<"] },
-    { "before": ["<Tab>"], "after": [">", ">"] },
+    { "before": ["<Tab>"], "after": [">", ">"] }
   ],
   "vim.visualModeKeyBindings": [
     { "before": ["leader", "/"], "after": ["g", "c"] },
