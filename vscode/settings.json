@@ -257,7 +257,7 @@
   "prettier.vueIndentScriptAndStyle": false,
   "prettier.withNodeModules": false,
 
-  /* tailwind css*/
+  /* tailwind css */
   "tailwindCSS.experimental.configFile": "tailwind.config.ts",
   "tailwindCSS.experimental.classRegex": [
     ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"] // support `clsx`
