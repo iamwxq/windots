@@ -6,19 +6,18 @@
   "window.menuBarVisibility": "toggle",
   "window.newWindowDimensions": "inherit",
   "window.titleBarStyle": "custom",
-  "workbench.activityBar.location": "side",
   "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.editor.enablePreview": false,
   "workbench.editor.closeOnFileDelete": true,
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
-  "workbench.editor.limit.value": 7,
+  "workbench.editor.limit.value": 10,
   "workbench.editor.showTabs": "multiple",
   "workbench.editor.tabActionLocation": "right",
-  "workbench.iconTheme": "catppuccin-perfect-mocha",
   "workbench.layoutControl.enabled": false,
   "workbench.list.smoothScrolling": true,
+  "workbench.iconTheme": "catppuccin-perfect-mocha",
   "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
   "workbench.preferredLightColorTheme": "Catppuccin Latte",
   "workbench.tree.expandMode": "singleClick",
@@ -26,7 +25,8 @@
   "workbench.settings.editor": "json",
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
-  "workbench.statusBar.visible": false,
+  "workbench.statusBar.visible": true,
+  "workbench.editor.editorActionsLocation": "hidden",
 
   /* common */
   "emmet.showSuggestionsAsSnippets": true,
@@ -66,10 +66,7 @@
   "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.enabled": false,
   "editor.codeActionsOnSave": {
-    "quickfix.biome": "explicit",
-    "source.fixAll.eslint": "explicit",
-    "source.organizeImports": "explicit",
-    "source.organizeImports.biome": "explicit"
+    "source.organizeImports": "explicit"
   },
   "editor.colorDecorators": true, // since we already have 'color highlight' extension
   "editor.cursorBlinking": "blink",
@@ -100,7 +97,7 @@
   "editor.quickSuggestions": {
     "comments": "off",
     "other": "on",
-    "strings": "off"
+    "strings": "on"
   },
   "editor.roundedSelection": true,
   "editor.semanticHighlighting.enabled": true,
@@ -112,6 +109,9 @@
   "editor.scrollbar.vertical": "hidden",
   "editor.tabSize": 2,
   "editor.unicodeHighlight.invisibleCharacters": false,
+
+  /* explorer */
+  "explorer.decorations.colors": true,
 
   /* style validate */
   "css.validate": false,
@@ -128,7 +128,7 @@
   "codesnap.transparentBackground": true,
 
   /* color highlight */
-  "color-highlight.matchRgbWithNoFunction": true,
+  "color-highlight.matchRgbWithNoFunction": false,
   "color-highlight.markerType": "underline",
   "color-highlight.matchWords": true,
 
@@ -143,12 +143,6 @@
       "crust": "#000000"
     }
   },
-  // "catppuccin.customUIColors": {
-  //   "mocha": {
-  //     "tab.hoverBackground": "#000000",
-  //     "tab.unfocusedInactiveBackground": "#000000"
-  //   }
-  // },
   "catppuccin.extraBordersEnabled": false,
   "catppuccin.italicKeywords": false,
   "catppuccin.italicComments": false,
@@ -225,12 +219,15 @@
   /* path inteliisense */
   "javascript.suggest.paths": false,
   "typescript.suggest.paths": false,
+  "typescript.preferences.jsxAttributeCompletionStyle": "auto",
+
+  /* oxc */
+  "oxc-client.run": "onType",
 
   /* prettier */
   "prettier.arrowParens": "always",
   "prettier.bracketSameLine": true,
   "prettier.bracketSpacing": true,
-  "prettier.configPath": "",
   "prettier.documentSelectors": [],
   "prettier.embeddedLanguageFormatting": "auto",
   "prettier.enable": false,
@@ -241,24 +238,23 @@
   "prettier.insertPragma": false,
   "prettier.jsxSingleQuote": true,
   "prettier.prettierPath": "",
-  "prettier.printWidth": 88,
+  "prettier.printWidth": 80,
   "prettier.proseWrap": "preserve",
   "prettier.quoteProps": "as-needed",
   "prettier.requireConfig": false,
   "prettier.requirePragma": false,
   "prettier.resolveGlobalModules": false,
   "prettier.semi": true,
-  "prettier.singleAttributePerLine": true,
-  "prettier.singleQuote": true,
+  "prettier.singleAttributePerLine": false,
+  "prettier.singleQuote": false,
   "prettier.tabWidth": 2,
-  "prettier.trailingComma": "none",
+  "prettier.trailingComma": "all",
   "prettier.useEditorConfig": true,
   "prettier.useTabs": false,
   "prettier.vueIndentScriptAndStyle": false,
   "prettier.withNodeModules": false,
 
   /* tailwind css */
-  "tailwindCSS.experimental.configFile": "tailwind.config.ts",
   "tailwindCSS.experimental.classRegex": [
     ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"] // support `clsx`
   ],
@@ -266,6 +262,18 @@
   /* todo tree */
   "todo-tree.tree.showCurrentScanMode": false,
   "todo-tree.tree.showCountsInTree": true,
+
+  /* c# */
+  "csharp.format.enable": true,
+  "csharp.semanticHighlighting.enabled": true,
+  "dotnetAcquisitionExtension.enableTelemetry": false,
+  "dotnet.codeLens.enableReferencesCodeLens": false,
+  "dotnet.codeLens.enableTestsCodeLens": false,
+  "[csharp]": {
+    // "editor.defaultFormatter": "ms-dotnettools.csharp",
+    "editor.maxTokenizationLineLength": 2500,
+    "editor.tabSize": 4
+  },
 
   /* c/c++ */
   "C_Cpp.clang_format_fallbackStyle": "Google",
@@ -290,7 +298,7 @@
   "dart.showDartPadSampleCodeLens": false,
   "dart.previewFlutterUiGuidesCustomTracking": true,
   "[dart]": {
-    "editor.defaultFormatter": "Dart-Code.dart-code",
+    // "editor.defaultFormatter": "Dart-Code.dart-code",
     "editor.guides.indentation": false,
     "editor.tabSize": 4
   },
@@ -352,6 +360,7 @@
   },
 
   /* rust */
+  "rust-analyzer.hover.actions.enable": false,
   "rust-analyzer.lens.enable": false,
   "rust-analyzer.inlayHints.closingBraceHints.enable": false,
   "[rust]": {
@@ -390,7 +399,7 @@
   "vim.insertModeKeyBindings": [{ "before": ["j", "k"], "after": ["<Esc>"] }],
   "vim.normalModeKeyBindings": [
     { "before": ["leader", "w"], "commands": [":w!"] },
-    { "before": ["leader", "q"], "commands": [":q!"] },
+    { "before": ["leader", "c"], "commands": [":q!"] },
     { "before": ["leader", "x"], "commands": [":x!"] },
     { "before": ["leader", "/"], "after": ["g", "c", "c"] },
     { "before": ["leader", "z"], "commands": ["workbench.action.toggleZenMode"] },
