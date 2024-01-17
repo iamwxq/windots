@@ -2,7 +2,7 @@
   "biome":{
     "arrowParentheses": "always",
 
-    "bracketSameLine": true,
+    "bracketSameLine": false,
     "bracketSpacing": true,
 
     "lineEnding": "lf",

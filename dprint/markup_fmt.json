@@ -1,6 +1,6 @@
 {
   "markup": {
-    "closingBracketSameLine": true,
+    "closingBracketSameLine": false,
     "component.selfClosing": true,
 
     "formatComments": true,

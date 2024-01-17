@@ -44,7 +44,7 @@
     "ifStatement.spaceAfterIfKeyword": true,
     "importDeclaration.spaceSurroundingNamedImports": true,
 
-    "jsx.bracketPosition": "sameLine",
+    "jsx.bracketPosition": "nextLine",
     "jsxExpressionContainer.spaceSurroundingExpression": false,
     "jsx.forceNewLinesSurroundingContent": false,
     "jsx.quoteStyle": "preferDouble",
