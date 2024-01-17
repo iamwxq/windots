@@ -74,7 +74,7 @@
   "editor.detectIndentation": false,
   "editor.defaultColorDecorators": true,
   "editor.find.addExtraSpaceOnTop": false,
-  "editor.fontFamily": "FiraCode Nerd Font Mono, 霞鹜新晰黑, Microsoft Yahei, monospace",
+  "editor.fontFamily": "Fira Code, 霞鹜新晰黑, Microsoft Yahei, monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.fontWeight": "normal",
