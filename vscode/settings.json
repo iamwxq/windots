@@ -26,7 +26,7 @@
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
   "workbench.statusBar.visible": true,
-  "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.editor.editorActionsLocation": "titleBar",
 
   /* common */
   "emmet.showSuggestionsAsSnippets": true,
@@ -396,7 +396,10 @@
     "<C-w>": false,
     "<C-x>": false
   },
-  "vim.insertModeKeyBindings": [{ "before": ["j", "k"], "after": ["<Esc>"] }],
+  "vim.insertModeKeyBindings": [
+    { "before": ["j", "k"], "after": ["<C-[>"] },
+    { "before": ["Esc"], "commands": ["hideSuggestWidget"] }
+  ],
   "vim.normalModeKeyBindings": [
     { "before": ["leader", "w"], "commands": [":w!"] },
     { "before": ["leader", "c"], "commands": [":q!"] },
