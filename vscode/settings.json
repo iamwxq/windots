@@ -68,14 +68,14 @@
   "editor.codeActionsOnSave": {
     "source.organizeImports": "explicit"
   },
-  "editor.colorDecorators": true, // since we already have 'color highlight' extension
+  "editor.colorDecorators": true,
   "editor.cursorBlinking": "blink",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.detectIndentation": false,
   "editor.defaultColorDecorators": true,
   "editor.find.addExtraSpaceOnTop": false,
   "editor.fontFamily": "Fira Code, 霞鹜新晰黑, Microsoft Yahei, monospace",
-  "editor.fontLigatures": true,
+  "editor.fontLigatures":"'zero', 'ss02', 'ss03', 'ss05', 'ss08', 'calt'", // 0, >=, <=, $, &, @, ==, ===, !=, !==
   "editor.fontSize": 14,
   "editor.fontWeight": "normal",
   "editor.formatOnSave": true,
