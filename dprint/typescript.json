@@ -2,7 +2,7 @@
   "typescript": {
     "bracePosition": "sameLine",
     "nextControlFlowPosition": "sameLine",
-    "operatorPosition": "nextLine",
+    "operatorPosition": "sameLine",
     "preferHanging": false,
     "preferSingleLine": false,
     "quoteProps": "asNeeded",
