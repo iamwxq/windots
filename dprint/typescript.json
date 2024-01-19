@@ -17,7 +17,6 @@
     "arrowFunction.useParentheses": "force",
 
     "binaryExpression.linePerExpression": true,
-    "binaryExpression.operatorPosition": "nextLine",
     "binaryExpression.spaceSurroundingBitwiseAndArithmeticOperator": true,
 
     "classDeclaration.bracePosition": "sameLine",
