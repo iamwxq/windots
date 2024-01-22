@@ -44,8 +44,9 @@
   "http.proxy": "http://127.0.0.1:23088",
   "http.proxyAuthorization": null,
   "http.proxyStrictSSL": false,
-  // "http.proxySupport": "off", // DO NOT set this config, whatever 'on' or 'off'
-  "security.allowedUNCHosts": ["wsl.localhost"],
+  "security.allowedUNCHosts": [
+    "wsl.localhost"
+  ],
   "security.workspace.trust.untrustedFiles": "open",
 
   /* terminal */
@@ -145,7 +146,7 @@
   },
   "catppuccin.extraBordersEnabled": false,
   "catppuccin.italicKeywords": false,
-  "catppuccin.italicComments": false,
+  "catppuccin.italicComments": true,
 
   /* errorlens */
   "errorLens.enabledDiagnosticLevels": ["warning", "error"],
@@ -398,7 +399,7 @@
   },
   "vim.insertModeKeyBindings": [
     { "before": ["j", "k"], "after": ["<C-[>"] },
-    { "before": ["Esc"], "commands": ["hideSuggestWidget"] }
+    { "before": ["Esc"], "commands": ["hideSuggestWidget", "closeParameterHints"] }
   ],
   "vim.normalModeKeyBindings": [
     { "before": ["leader", "w"], "commands": [":w!"] },
