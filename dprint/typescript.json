@@ -1,20 +1,20 @@
 {
   "typescript": {
     "bracePosition": "sameLine",
-    "nextControlFlowPosition": "sameLine",
+    "nextControlFlowPosition": "nextLine",
     "operatorPosition": "sameLine",
     "preferHanging": false,
     "preferSingleLine": false,
     "quoteProps": "asNeeded",
     "quoteStyle": "preferDouble",
     "semiColons": "always",
-    "singleBodyPosition": "nextLine",
+    "singleBodyPosition": "maintain",
     "spaceAround": false,
     "trailingCommas": "onlyMultiLine",
-    "useBraces": "preferNone",
+    "useBraces": "whenNotSingleLine",
 
     "arrowFunction.bracePosition": "sameLineUnlessHanging",
-    "arrowFunction.useParentheses": "force",
+    "arrowFunction.useParentheses": "preferNone",
 
     "binaryExpression.linePerExpression": true,
     "binaryExpression.spaceSurroundingBitwiseAndArithmeticOperator": true,

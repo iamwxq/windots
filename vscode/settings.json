@@ -106,7 +106,7 @@
   "editor.snippetSuggestions": "inline",
   "editor.suggestSelection": "first",
   "editor.stickyScroll.enabled": false,
-  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.horizontal": "auto",
   "editor.scrollbar.vertical": "hidden",
   "editor.tabSize": 2,
   "editor.unicodeHighlight.invisibleCharacters": false,
