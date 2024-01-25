@@ -122,6 +122,11 @@
   /* zen mode */
   "zenMode.hideLineNumbers": false,
 
+  /* codegeex */
+  "Codegeex.CompletionModel": "CodeGeeX Pro[Beta]",
+  "Codegeex.OnlyKeyControl": false,
+  "Codegeex.Privacy": false,
+
   /* codesnap */
   "codesnap.backgroundColor": "#abb8c3",
   "codesnap.boxShadow": "rgba(0, 0, 0, 0) 0px 20px 68px",
@@ -147,6 +152,7 @@
   "catppuccin.extraBordersEnabled": false,
   "catppuccin.italicKeywords": false,
   "catppuccin.italicComments": true,
+
 
   /* errorlens */
   "errorLens.enabledDiagnosticLevels": ["warning", "error"],
