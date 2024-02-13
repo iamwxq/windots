@@ -12,7 +12,7 @@
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
-  "workbench.editor.limit.value": 10,
+  "workbench.editor.limit.value": 7,
   "workbench.editor.showTabs": "multiple",
   "workbench.editor.tabActionLocation": "right",
   "workbench.layoutControl.enabled": false,
@@ -76,13 +76,13 @@
   "editor.defaultColorDecorators": true,
   "editor.find.addExtraSpaceOnTop": false,
   "editor.fontFamily": "Fira Code, 霞鹜新晰黑, Microsoft Yahei, monospace",
-  "editor.fontLigatures":"'zero', 'ss02', 'ss03', 'ss05', 'ss08', 'calt'", // 0, >=, <=, $, &, @, ==, ===, !=, !==
+  "editor.fontLigatures":"'zero', 'ss03', 'ss05', 'ss08', 'calt'", // 0, $, &, @, ==, ===, !=, !==
   "editor.fontSize": 14,
   "editor.fontWeight": "normal",
   "editor.formatOnSave": true,
   "editor.formatOnType": false,
   "editor.guides.bracketPairs": false,
-  "editor.guides.highlightActiveIndentation": "always",
+  "editor.guides.indentation": true,
   "editor.hover.sticky": true,
   "editor.inlayHints.fontSize": 14,
   "editor.inlayHints.padding": true,
@@ -405,11 +405,14 @@
   },
   "vim.insertModeKeyBindings": [
     { "before": ["j", "k"], "after": ["<C-[>"] },
-    { "before": ["Esc"], "commands": ["hideSuggestWidget", "closeParameterHints"] }
+    { "before": ["Esc"], "commands": ["hideSuggestWidget", "closeParameterHints"] },
+    { "before": ["<C-a>"], "commands": ["editor.action.selectAll"] },
+    { "before": ["<C-c>"], "commands": ["editor.action.clipboardCopyAction"] },
+    { "before": ["<C-v>"], "commands": ["editor.action.clipboardPasteAction"] },
   ],
   "vim.normalModeKeyBindings": [
     { "before": ["leader", "w"], "commands": [":w!"] },
-    { "before": ["leader", "c"], "commands": [":q!"] },
+    { "before": ["leader", "q"], "commands": [":wq!"] },
     { "before": ["leader", "x"], "commands": [":x!"] },
     { "before": ["leader", "/"], "after": ["g", "c", "c"] },
     { "before": ["leader", "z"], "commands": ["workbench.action.toggleZenMode"] },
@@ -432,13 +435,15 @@
     { "before": ["n"], "after": ["n", "z", "z"] },
     { "before": ["N"], "after": ["N", "z", "z"] },
     { "before": ["<C-a>"], "after": ["g", "g", "V", "G"] },
+    // { "before": ["<C-d>"], "after": ["<C-d>", "z", "z"] },
+    // { "before": ["<C-u>"], "after": ["<C-u>", "z", "z"] },
     { "before": ["<S-Tab>"], "after": ["<", "<"] },
     { "before": ["<Tab>"], "after": [">", ">"] }
   ],
   "vim.visualModeKeyBindings": [
     { "before": ["leader", "/"], "after": ["g", "c"] },
-    { "before": ["<C-a>"], "after": ["<Esc>", "<C-o>", "<C-o>"] },
-    { "before": ["<Tab>"], "after": [">", ">", "<Esc>"] },
-    { "before": ["<S-Tab>"], "after": ["<", "<", "<Esc>"] }
-  ]
+    { "before": ["<C-a>"], "after": ["<Esc>", "<C-o>", "<C-o>", "z", "z"] },
+    { "before": ["<Tab>"], "after": [">"] },
+    { "before": ["<S-Tab>"], "after": ["<"] }
+  ],
 }

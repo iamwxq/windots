@@ -1,10 +1,10 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions":
+    "actions": 
     [
         {
-            "command":
+            "command": 
             {
                 "action": "copy",
                 "singleLine": false
@@ -16,11 +16,7 @@
             "keys": "ctrl+v"
         },
         {
-            "command": "find",
-            "keys": "ctrl+shift+f"
-        },
-        {
-            "command":
+            "command": 
             {
                 "action": "splitPane",
                 "split": "auto",
@@ -29,8 +25,12 @@
             "keys": "alt+shift+d"
         },
         {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
             "command": "toggleFocusMode",
-            "keys": "ctrl+space"
+            "keys": "ctrl+enter"
         }
     ],
     "alwaysShowTabs": true,
@@ -39,26 +39,26 @@
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-    "initialCols": 110,
-    "initialRows": 36,
+    "initialCols": 130,
+    "initialRows": 34,
     "language": "zh-Hans",
-    "launchMode": "focus",
-    "newTabMenu":
+    "launchMode": "default",
+    "newTabMenu": 
     [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles":
+    "profiles": 
     {
-        "defaults":
+        "defaults": 
         {
             "antialiasingMode": "cleartype",
             "backgroundImage": null,
             "backgroundImageOpacity": 0.9,
             "colorScheme": "Catppuccin Mocha",
             "cursorShape": "filledBox",
-            "font":
+            "font": 
             {
                 "face": "FiraCode Nerd Font Mono",
                 "size": 12.0,
@@ -71,7 +71,7 @@
             "startingDirectory": "D:/dev",
             "useAtlasEngine": true
         },
-        "list":
+        "list": 
         [
             {
                 "commandline": "pwsh.exe --nologo",
@@ -81,10 +81,12 @@
                 "source": "Windows.Terminal.PowershellCore"
             },
             {
-                "guid": "{e5a83caa-4c73-52b3-ae6b-bc438d721ef9}",
+                "guid": "{a5a97cb8-8961-5535-816d-772efe0c6a3f}",
                 "hidden": false,
-                "name": "Ubuntu 22.04.3 LTS",
-                "source": "CanonicalGroupLimited.Ubuntu22.04LTS_79rhkp1fndgsc"
+                "icon": "D:\\develop\\wsl\\arch\\Arch.exe",
+                "name": "Arch",
+                "source": "Windows.Terminal.Wsl",
+                "startingDirectory": "~/dev"
             },
             {
                 "commandline": "C:/Users/whoev/scoop/apps/git/current/bin/bash.exe",
@@ -95,7 +97,7 @@
             }
         ]
     },
-    "schemes":
+    "schemes": 
     [
         {
             "background": "#191919",
@@ -400,22 +402,22 @@
     "showTabsInTitlebar": true,
     "tabWidthMode": "titleLength",
     "theme": "Catppuccin Mocha",
-    "themes":
+    "themes": 
     [
         {
             "name": "Catppuccin Mocha",
-            "tab":
+            "tab": 
             {
                 "background": "#1E1E2EFF",
                 "showCloseButton": "always",
                 "unfocusedBackground": null
             },
-            "tabRow":
+            "tabRow": 
             {
                 "background": "#000000FF",
                 "unfocusedBackground": "#000000FF"
             },
-            "window":
+            "window": 
             {
                 "applicationTheme": "dark",
                 "useMica": false

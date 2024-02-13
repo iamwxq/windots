@@ -32,6 +32,9 @@ If (Test-Path "D:\develop\miniconda\Scripts\conda.exe") {
 # 引入starship
 Invoke-Expression (&starship init powershell)
 
+# scoop-search hook
+Invoke-Expression (&scoop-search --hook)
+
 function New-File {
     <#
     .SYNOPSIS

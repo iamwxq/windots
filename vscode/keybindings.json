@@ -69,5 +69,5 @@
     "key": "ctrl+k",
     "command": "selectPrevCodeAction",
     "when": "codeActionMenuVisible"
-  }
+  },
 ]

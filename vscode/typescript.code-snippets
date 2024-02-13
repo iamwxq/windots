@@ -1,0 +1,117 @@
+{
+  "Import Statement":{
+    "prefix": "im",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "body": ["import { $2 } from \"$1\";"],
+    "description": "Import module"
+  },
+
+  "Function Expression":{
+    "prefix": "fe",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "body": [
+      "function ($1) {",
+      "\t$2"
+      "}"
+    ],
+    "description": "Function expression"
+  },
+
+  "Arrow Function Curly ":{
+    "prefix": "afc",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "body": [
+      "$1 => {",
+      "\t$2"
+      "}",
+    ],
+    "description": "Arrow function with curly braces"
+  },
+
+  "Arrow Function No Curly ":{
+    "prefix": "af",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "body": [
+      "$1 => $2",
+    ],
+    "description": "Arrow function without curly braces"
+  },
+
+  "Class syntatic": {
+    "prefix": "cls",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "body": [
+      "class $1 {",
+      "\tconstructor($2) {",
+      "\t\t$3",
+      "\t}"
+      "}"
+    ],
+    "description": "Create a class"
+  },
+
+  "Log": {
+    "prefix": "cl",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "body": [
+      "console.log($1);"
+    ],
+    "description": "Log to console"
+  },
+
+  "ReactFunctionComponentWithProps": {
+    "prefix": "rfcp",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "body": [
+      "export type ${1:${TM_FILENAME_BASE}}Props = {",
+      "\tchildren?: React.ReactNode;",
+      "};",
+      "",
+      "const ${1:${TM_FILENAME_BASE}}: React.FC<${1:${TM_FILENAME_BASE}}Props> = props => {",
+      "\tconst { children } = props;",
+      "",
+      "\treturn (",
+      "\t\t<>",
+      "\t\t\t{children} ",
+      "\t\t</>",
+      "\t);",
+      "};",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}};",
+      ""
+    ],
+    "description": "React component with props"
+  },
+
+  "ReactFunctionComponentNoPropsAndExport": {
+    "prefix": "rfce",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "body": [
+      "const ${1:${TM_FILENAME_BASE}}: React.FC = () => {",
+      "\treturn (",
+      "\t\t<>",
+      "\t\t</>",
+      "\t);",
+      "};",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}};",
+      ""
+    ],
+    "description": "React component no props"
+  },
+
+  "ReactFunctionComponentNoProps": {
+    "prefix": "rfc",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "body": [
+      "const ${1:${TM_FILENAME_BASE}}: React.FC = () => {",
+      "\treturn (",
+      "\t\t<>",
+      "\t\t</>",
+      "\t);",
+      "};",
+      ""
+    ],
+    "description": "React component no props"
+  },
+}
