@@ -21,7 +21,7 @@
     "prefix": "afc",
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "body": [
-      "$1 => {",
+      "($1) => {",
       "\t$2"
       "}",
     ],
@@ -32,12 +32,12 @@
     "prefix": "af",
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "body": [
-      "$1 => $2",
+      "($1) => $2",
     ],
     "description": "Arrow function without curly braces"
   },
 
-  "Class syntatic": {
+  "Class": {
     "prefix": "cls",
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "body": [
@@ -61,13 +61,13 @@
 
   "ReactFunctionComponentWithProps": {
     "prefix": "rfcp",
-    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "scope": "typescript,typescriptreact",
     "body": [
       "export type ${1:${TM_FILENAME_BASE}}Props = {",
       "\tchildren?: React.ReactNode;",
       "};",
       "",
-      "const ${1:${TM_FILENAME_BASE}}: React.FC<${1:${TM_FILENAME_BASE}}Props> = props => {",
+      "function ${1:${TM_FILENAME_BASE}}(props): React.FC<${1:${TM_FILENAME_BASE}}Props> {",
       "\tconst { children } = props;",
       "",
       "\treturn (",
@@ -83,14 +83,15 @@
     "description": "React component with props"
   },
 
-  "ReactFunctionComponentNoPropsAndExport": {
-    "prefix": "rfce",
-    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+  "ReactFunctionComponentNoProps": {
+    "prefix": "rfc",
+    "scope": "typescript,typescriptreact",
     "body": [
-      "const ${1:${TM_FILENAME_BASE}}: React.FC = () => {",
+      "function ${1:${TM_FILENAME_BASE}}(): React.FC {",
       "\treturn (",
-      "\t\t<>",
-      "\t\t</>",
+      "\t\t<div>",
+      "\t\t\t$0",
+      "\t\t</div>",
       "\t);",
       "};",
       "",
@@ -100,18 +101,28 @@
     "description": "React component no props"
   },
 
-  "ReactFunctionComponentNoProps": {
+  "ReactFunctionComponent": {
     "prefix": "rfc",
-    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "scope": "javascript,javascriptreact",
     "body": [
-      "const ${1:${TM_FILENAME_BASE}}: React.FC = () => {",
+      "function ${1:${TM_FILENAME_BASE}}() {",
       "\treturn (",
-      "\t\t<>",
-      "\t\t</>",
+      "\t\t<div>",
+      "\t\t\t$0",
+      "\t\t</div>",
       "\t);",
       "};",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}};",
       ""
     ],
     "description": "React component no props"
   },
+
+  "importCSSModule": {
+      "prefix": "csm",
+      "scope": "javascript,javascriptreact",
+      "body": ["import styles from './${TM_FILENAME_BASE}.module.css'"],
+      "description": "Import CSS Module as `styles`"
+    },
 }
