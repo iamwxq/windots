@@ -17,6 +17,7 @@ Some following packages might be installed
 - stylelint-config-standard
 - stylelint-config-standard-scss
 - stylelint-config-standard-vue
+- stylelint-config-recess-order
 - @stylistic/stylelint-plugin
 
 **husky**
@@ -50,7 +51,7 @@ pnpm add -D eslint@latest @antfu/eslint-config@latest @eslint/eslintrc@latest es
 **stylelint**
 
 ```sh
-pnpm add -D stylelint@latest stylelint-config-standard@latest stylelint-config-standard-scss@latest stylelint-config-standard-vue@latest @stylistic/stylelint-plugin@latest
+pnpm add -D stylelint@latest stylelint-config-recess-order@latest @stylistic/stylelint-plugin@latest stylelint-config-standard-vue@latest stylelint-config-standard@latest stylelint-config-standard-scss@latest
 ```
 
 **husky**
@@ -58,6 +59,7 @@ pnpm add -D stylelint@latest stylelint-config-standard@latest stylelint-config-s
 ```sh
 pnpm add -D husky@latest
 
+git init
 pnpm dlx husky init
 ```
 
