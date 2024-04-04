@@ -93,7 +93,7 @@ The configuration files
 
 **stylelint**
 
-- .stylelintrc.js
+- stylelint.config.js
 
 **husky**
 
