@@ -101,7 +101,7 @@ The configuration files
 
 **lint-staged**
 
-- .lintstagedrc.js
+- lint-staged.config.js
 
 **commitlint**
 

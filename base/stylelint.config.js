@@ -2,8 +2,6 @@
 export default {
   allowEmptyInput: true,
   extends: [
-    "stylelint-config-standard",
-    "stylelint-config-standard-scss",
     "stylelint-config-standard-vue",
     "stylelint-config-recess-order",
   ],
