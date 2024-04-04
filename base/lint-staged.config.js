@@ -14,6 +14,6 @@ export default {
   },
   "**/*.{vue,css,scss}": async (files) => {
     const filesToLint = await removeIgnoredFiles(files);
-    return [`stylelint ${filesToLint} --max-warnings=0`];
+    return [`stylelint ${filesToLint} --max-warnings=0 --fix`];
   },
 };

@@ -78,6 +78,10 @@ pnpm add -D @commitlint/cli@latest @commitlint/config-conventional@latest
 ```sh
 pnpm add -D commitizen@latest cz-conventional-changelog@latest
 
+# --------- alternative -----------
+pnpm add -D commitizen@latest
+pnpm dlx commitizen init cz-conventional-changelog --pnpm --save-dev --save-exact
+
 pnpm run cz
 ```
 
@@ -110,3 +114,4 @@ The configuration files
 **commitizen**
 
 - .czrc
+- package.json

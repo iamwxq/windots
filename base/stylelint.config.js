@@ -12,6 +12,8 @@ export default {
     // standard
     "color-named": "never",
     "media-feature-range-notation": "prefix",
+    "color-function-notation": "legacy",
+    "alpha-value-notation": "number",
 
     // @stylistic/stylelint-plugin
     "@stylistic/unit-case": "lower",
