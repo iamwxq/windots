@@ -26,6 +26,7 @@ export default antfu({
   },
   vue: {
     overrides: {
+      "vue/multiline-html-element-content-newline": "off",
       "vue/max-attributes-per-line": ["warn", {
         singleline: 2,
         multiline: 1,

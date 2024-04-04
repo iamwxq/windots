@@ -1,7 +1,9 @@
 /** @type {import('stylelint').Config} */
 export default {
-  defaultSeverity: "warning",
+  allowEmptyInput: true,
   extends: [
+    "stylelint-config-standard",
+    "stylelint-config-standard-scss",
     "stylelint-config-standard-vue",
     "stylelint-config-recess-order",
   ],
