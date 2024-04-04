@@ -3,9 +3,19 @@
   "eslint.experimental.useFlatConfig": true,
 
   // Editor
+  "prettier.enable": false,
   "editor.formatOnSave": false,
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+
+  "stylelint.enable": true,
+  "eslint.enable": true,
+
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit",
+
     "source.organizeImports": "never"
   },
 
@@ -20,7 +30,8 @@
     { "rule": "*-dangle", "severity": "off" },
     { "rule": "*-newline", "severity": "off" },
     { "rule": "*quotes", "severity": "off" },
-    { "rule": "*semi", "severity": "off" }
+    { "rule": "*semi", "severity": "off" },
+    { "rule": "vue/max-attributes-per-line", "severity": "off"}
   ],
 
   // Enable eslint for all supported languages
@@ -36,6 +47,19 @@
     "jsonc",
     "yaml",
     "toml"
-  ]
+  ],
+
+  // Enable stylelint for .css .scss .vue
+  "stylelint.validate": [
+    "vue",
+    "css",
+    "scss",
+    "postcss"
+  ],
+
+  "errorLens.excludeBySource": [
+    "eslint",
+    "Stylelint"
+  ],
 }
 

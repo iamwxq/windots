@@ -3,14 +3,13 @@ import { FlatCompat } from "@eslint/eslintrc";
 
 const compat = new FlatCompat();
 
-export default antfu(
-  {
-    stylistic: {
-      quotes: "double",
-      semi: true,
-    },
-    react: true,
-    rules: {
+export default antfu({
+  stylistic: {
+    quotes: "double",
+    semi: true,
+  },
+  react: {
+    overrides: {
       "react/prop-types": "off",
       "react-refresh/only-export-components": "off",
       "style/jsx-one-expression-per-line": "off",
@@ -25,15 +24,22 @@ export default antfu(
       ],
     },
   },
-  // TailwindCSS
-  ...compat.config({
-    extends: [
-      "plugin:tailwindcss/recommended",
-    ],
-    rules: {
-      "tailwindcss/no-custom-classname": "off",
-      "tailwindcss/migration-from-tailwind-2": "off",
-      "tailwindcss/no-arbitrary-value": "off",
+  vue: {
+    overrides: {
+      "vue/max-attributes-per-line": ["warn", {
+        singleline: 2,
+        multiline: 1,
+      }],
     },
-  }),
-);
+    vueVersion: 3,
+  },
+},
+// TailwindCSS
+...compat.config({
+  extends: [
+    "plugin:tailwindcss/recommended",
+  ],
+  rules: {
+    "tailwindcss/migration-from-tailwind-2": "off",
+  },
+}));
