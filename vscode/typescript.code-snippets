@@ -6,12 +6,23 @@
     "description": "Import module"
   },
 
+  "Function Declaration": {
+    "prefix": "fd",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "body": [
+      "function $1($2) {",
+      "\t$3",
+      "}"
+    ],
+    "description": "Function declartion"
+  },
+
   "Function Expression":{
     "prefix": "fe",
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "body": [
       "function ($1) {",
-      "\t$2"
+      "\t$2",
       "}"
     ],
     "description": "Function expression"
@@ -22,7 +33,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "body": [
       "($1) => {",
-      "\t$2"
+      "\t$2",
       "}",
     ],
     "description": "Arrow function with curly braces"
@@ -44,7 +55,7 @@
       "class $1 {",
       "\tconstructor($2) {",
       "\t\t$3",
-      "\t}"
+      "\t}",
       "}"
     ],
     "description": "Create a class"
@@ -63,17 +74,17 @@
     "prefix": "rfcp",
     "scope": "typescript,typescriptreact",
     "body": [
+      "import React from \"react\";",
+      "",
       "export type ${1:${TM_FILENAME_BASE}}Props = {",
       "\tchildren?: React.ReactNode;",
       "};",
       "",
-      "function ${1:${TM_FILENAME_BASE}}(props): React.FC<${1:${TM_FILENAME_BASE}}Props> {",
-      "\tconst { children } = props;",
-      "",
+      "const ${1:${TM_FILENAME_BASE}}: React.FC<${1:${TM_FILENAME_BASE}}Props> = ({ children }) => {",
       "\treturn (",
-      "\t\t<>",
+      "\t\t<div>",
       "\t\t\t{children} ",
-      "\t\t</>",
+      "\t\t</div>",
       "\t);",
       "};",
       "",
@@ -87,10 +98,12 @@
     "prefix": "rfc",
     "scope": "typescript,typescriptreact",
     "body": [
-      "function ${1:${TM_FILENAME_BASE}}(): React.FC {",
+      "import React from \"react\";",
+      "",
+      "function ${1:${TM_FILENAME_BASE}}($2) {",
       "\treturn (",
       "\t\t<div>",
-      "\t\t\t$0",
+      "\t\t\t$3",
       "\t\t</div>",
       "\t);",
       "};",
@@ -105,10 +118,10 @@
     "prefix": "rfc",
     "scope": "javascript,javascriptreact",
     "body": [
-      "function ${1:${TM_FILENAME_BASE}}() {",
+      "function ${1:${TM_FILENAME_BASE}}($2) {",
       "\treturn (",
       "\t\t<div>",
-      "\t\t\t$0",
+      "\t\t\t$3",
       "\t\t</div>",
       "\t);",
       "};",
@@ -120,9 +133,9 @@
   },
 
   "importCSSModule": {
-      "prefix": "csm",
-      "scope": "javascript,javascriptreact",
-      "body": ["import styles from './${TM_FILENAME_BASE}.module.css'"],
-      "description": "Import CSS Module as `styles`"
-    },
+    "prefix": "csm",
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "body": ["import styles from './${TM_FILENAME_BASE}.module.css'"],
+    "description": "Import CSS Module as `styles`"
+  },
 }

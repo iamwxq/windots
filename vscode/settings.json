@@ -76,7 +76,7 @@
   "editor.defaultColorDecorators": true,
   "editor.find.addExtraSpaceOnTop": false,
   "editor.fontFamily": "Fira Code, 霞鹜新晰黑, Microsoft Yahei, monospace",
-  "editor.fontLigatures":"'zero', 'ss03', 'ss05', 'ss08', 'calt'", // 0, $, &, @, ==, ===, !=, !==
+  "editor.fontLigatures": "'zero', 'ss03', 'ss05', 'ss08', 'calt'", // 0, $, &, @, ==, ===, !=, !==
   "editor.fontSize": 14,
   "editor.fontWeight": "normal",
   "editor.formatOnSave": true,
@@ -107,9 +107,11 @@
   "editor.suggestSelection": "first",
   "editor.stickyScroll.enabled": false,
   "editor.scrollbar.horizontal": "auto",
-  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.vertical": "auto",
   "editor.tabSize": 2,
   "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.wordWrap": "bounded",
+  "editor.wordWrapColumn": 200,
 
   /* explorer */
   "explorer.decorations.colors": true,
@@ -121,11 +123,6 @@
 
   /* zen mode */
   "zenMode.hideLineNumbers": false,
-
-  /* codegeex */
-  "Codegeex.CompletionModel": "CodeGeeX Pro[Beta]",
-  "Codegeex.OnlyKeyControl": false,
-  "Codegeex.Privacy": false,
 
   /* codesnap */
   "codesnap.backgroundColor": "#abb8c3",
@@ -153,7 +150,6 @@
   "catppuccin.italicKeywords": false,
   "catppuccin.italicComments": true,
 
-
   /* errorlens */
   "errorLens.enabledDiagnosticLevels": ["warning", "error"],
   "errorLens.excludeBySource": ["eslint"],
@@ -161,21 +157,6 @@
   "errorLens.gutterIconsFollowCursorOverride": false,
   "errorLens.gutterIconSet": "defaultOutline",
   "errorLens.messageBackgroundMode": "none",
-
-  /* eslint */
-  "eslint.execArgv": ["--max_old_space_size=8192"],
-  "eslint.probe": [
-    "html",
-    "markdown",
-    "mdx",
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "vue"
-  ],
-  "eslint.run": "onType",
-  "eslint.runtime": "node",
 
   /* evenbettertoml */
   "evenBetterToml.formatter.allowedBlankLines": 1,
@@ -187,12 +168,14 @@
   /* dprint */
   "dprint.verbose": false,
 
-  /* gitlens */
+  /* git */
+  "git.autofetch": false,
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.enabled": false,
   "gitlens.codeLens.recentChange.enabled": false,
   "gitlens.showWelcomeOnInstall": false,
   "gitlens.showWhatsNewAfterUpgrades": false,
+
 
   /* leetcode */
   "leetcode.enableSideMode": false,
@@ -204,9 +187,6 @@
   "leetcode.showDescription": "In File Comment",
   "leetcode.useEndpointTranslation": false,
   "leetcode.workspaceFolder": "d:/project/leetcode-js",
-
-  /* lingma */
-  "Lingma.methodQuickOperation": false,
 
   /* live server */
   "liveServer.settings.donotShowInfoMsg": true,
@@ -223,15 +203,17 @@
   /* mdx */
   "mdx.server.enable": true,
 
+  "html.autoClosingTags": false,
+  "javascript.autoClosingTags": false,
+  "typescript.autoClosingTags": false,
+
   /* path inteliisense */
   "javascript.suggest.paths": false,
   "typescript.suggest.paths": false,
   "typescript.preferences.jsxAttributeCompletionStyle": "auto",
 
-  /* oxc */
-  "oxc-client.run": "onType",
-
   /* prettier */
+  /*
   "prettier.arrowParens": "always",
   "prettier.bracketSameLine": true,
   "prettier.bracketSpacing": true,
@@ -243,7 +225,7 @@
   "prettier.htmlWhitespaceSensitivity": "css",
   "prettier.ignorePath": ".prettierignore",
   "prettier.insertPragma": false,
-  "prettier.jsxSingleQuote": true,
+  "prettier.jsxSingleQuote": false,
   "prettier.prettierPath": "",
   "prettier.printWidth": 80,
   "prettier.proseWrap": "preserve",
@@ -260,8 +242,13 @@
   "prettier.useTabs": false,
   "prettier.vueIndentScriptAndStyle": false,
   "prettier.withNodeModules": false,
+  */
+
+  /* regex previewer */
+  "regex-previewer.enableCodeLens": false,
 
   /* tailwind css */
+  "tailwindCSS.emmetCompletions": true,
   "tailwindCSS.experimental.classRegex": [
     ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"] // support `clsx`
   ],
@@ -283,6 +270,7 @@
   },
 
   /* c/c++ */
+  /*
   "C_Cpp.clang_format_fallbackStyle": "Google",
   "C_Cpp.clang_format_path": "D:/develop/mingw64/bin/clang-format.exe",
   "C_Cpp.clang_format_style": "file:C:/Users/whoev/.clang-format",
@@ -296,8 +284,10 @@
     "editor.defaultFormatter": "ms-vscode.cpptools",
     "editor.tabSize": 4
   },
+  */
 
   /* dart */
+  /*
   "dart.flutterHotReloadOnSave": "all",
   "dart.showMainCodeLens": false,
   "dart.showTestCodeLens": false,
@@ -309,11 +299,13 @@
     "editor.guides.indentation": false,
     "editor.tabSize": 4
   },
+  */
 
   /* deno */
   "deno.cacheOnSave": true,
 
   /* go */
+  /*
   "go.enableCodeLens": {
     "runtest": false
   },
@@ -340,6 +332,7 @@
     "editor.defaultFormatter": "golang.go",
     "editor.tabSize": 4
   },
+  */
 
   /* javascript & typescript */
   "js/ts.implicitProjectConfig.target": "ESNext",
@@ -349,10 +342,11 @@
 
   /* mdx */
   "[mdx]": {
-    "editor.defaultFormatter": "unifiedjs.vscode-mdx"
+    // "editor.defaultFormatter": "unifiedjs.vscode-mdx"
   },
 
   /* python */
+  /*
   "notebook.lineNumbers": "on",
   "notebook.output.scrolling": true,
   "python.terminal.activateEnvironment": false,
@@ -365,8 +359,10 @@
     "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.tabSize": 4
   },
+  */
 
   /* rust */
+  /*
   "rust-analyzer.hover.actions.enable": false,
   "rust-analyzer.lens.enable": false,
   "rust-analyzer.inlayHints.closingBraceHints.enable": false,
@@ -374,6 +370,7 @@
     "editor.defaultFormatter": "rust-lang.rust-analyzer",
     "editor.tabSize": 4
   },
+  */
 
   /* vue */
   "vue.codeActions.enabled": false,
@@ -391,10 +388,19 @@
   "vim.highlightedyank.enable": true,
   "vim.highlightedyank.textColor": "black",
   "vim.autoSwitchInputMethod.enable": true,
+  "vim.mouseSelectionGoesIntoVisualMode": false,
   "vim.highlightedyank.color": "rgba(230, 230 , 230, 0.7)",
   "vim.autoSwitchInputMethod.defaultIM": "1033",
   "vim.autoSwitchInputMethod.obtainIMCmd": "D:/develop/bin/im-select.exe",
   "vim.autoSwitchInputMethod.switchIMCmd": "D:/develop/bin/im-select.exe {im}",
+  "vim.easymotion": true,
+  "vim.easymotionMarkerFontWeight": "semibold",
+  "vim.easymotionMarkerBackgroundColor": "#0000",
+  "vim.easymotionMarkerForegroundColorOneChar": "#eff6ff",
+  "vim.easymotionMarkerForegroundColorTwoCharFirst": "#bfdbfe",
+  "vim.easymotionMarkerForegroundColorTwoCharSecond": "#93c5fd",
+  "vim.easymotionIncSearchForegroundColor": "#bfdbfe",
+  "vim.surround": true,
   "vim.handleKeys": {
     "<C-a>": true,
     "<C-b>": false,
@@ -405,21 +411,22 @@
   },
   "vim.insertModeKeyBindings": [
     { "before": ["j", "k"], "after": ["<C-[>"] },
-    { "before": ["Esc"], "commands": ["hideSuggestWidget", "closeParameterHints"] },
+    { "before": ["Esc"], "commands": [ "hideSuggestWidget", "closeParameterHints", "cancelSelection", "removeSecondaryCursors" ] },
     { "before": ["<C-a>"], "commands": ["editor.action.selectAll"] },
     { "before": ["<C-c>"], "commands": ["editor.action.clipboardCopyAction"] },
-    { "before": ["<C-v>"], "commands": ["editor.action.clipboardPasteAction"] },
+    { "before": ["<C-v>"], "commands": ["editor.action.clipboardPasteAction"] }
   ],
   "vim.normalModeKeyBindings": [
-    { "before": ["leader", "w"], "commands": [":w!"] },
-    { "before": ["leader", "q"], "commands": [":wq!"] },
-    { "before": ["leader", "x"], "commands": [":x!"] },
     { "before": ["leader", "/"], "after": ["g", "c", "c"] },
+    { "before": ["leader", "q"], "commands": ["workbench.action.closeActiveEditor"] },
+    // { "before": ["leader", "w"], "commands": ["workbench.action.files.save"] },
     { "before": ["leader", "z"], "commands": ["workbench.action.toggleZenMode"] },
-    { "before": ["leader", "d", "b"], "commands": ["editor.debug.action.toggleBreakpoint"] },
+    // { "before": ["leader", "d", "b"], "commands": ["editor.debug.action.toggleBreakpoint"] },
+    { "before": ["leader", "d", "f"], "after": ["V", "$", "%", "d"] },
     { "before": ["leader", "f", "f"], "commands": ["workbench.action.quickOpen"] },
+    { "before": ["leader", "f", "n"], "commands": ["fileutils.newFileAtRoot"] },
+    { "before": ["leader", "f", "r"], "commands": ["fileutils.renameFile"] },
     { "before": ["leader", "l", "a"], "commands": ["editor.action.quickFix"] },
-    { "before": ["leader", "l", "s"], "commands": ["editor.action.triggerSuggest"] },
     { "before": ["leader", "1"], "commands": ["workbench.action.focusFirstEditorGroup"] },
     { "before": ["leader", "2"], "commands": ["workbench.action.focusSecondEditorGroup"] },
     { "before": ["leader", "3"], "commands": ["workbench.action.focusThirdEditorGroup"] },
@@ -427,20 +434,24 @@
     { "before": ["leader", "5"], "commands": ["workbench.action.focusFifthEditorGroup"] },
     { "before": ["[", "d"], "commands": ["editor.action.marker.prevInFiles"] },
     { "before": ["]", "d"], "commands": ["editor.action.marker.nextInFiles"] },
-    { "before": ["\\"], "commands": ["workbench.action.splitEditorDown"] },
-    { "before": ["|"], "commands": ["workbench.action.splitEditor"] },
+    { "before": ["\\"], "commands": ["workbench.action.splitEditor"] },
+    { "before": ["|"], "commands": ["workbench.action.splitEditorDown"] },
     { "before": ["K"], "commands": ["editor.action.showHover"] },
     { "before": ["H"], "commands": ["extension.vim_ctrl+pageup"] },
     { "before": ["L"], "commands": ["extension.vim_ctrl+pagedown"] },
     { "before": ["n"], "after": ["n", "z", "z"] },
     { "before": ["N"], "after": ["N", "z", "z"] },
-    { "before": ["<C-a>"], "after": ["g", "g", "V", "G"] },
-    // { "before": ["<C-d>"], "after": ["<C-d>", "z", "z"] },
-    // { "before": ["<C-u>"], "after": ["<C-u>", "z", "z"] },
+    { "before": ["#"], "after": ["#", "z", "z"] },
+    { "before": ["*"], "after": ["*", "z", "z"] },
+    { "before": ["<C-a>"], "after": ["g", "g", "V", "G", "z", "z"] },
+    { "before": ["<C-d>"], "after": ["0", "1", "8", "g", "j", "z", "z"] },
+    { "before": ["<C-u>"], "after": ["0", "1", "8", "g", "k", "z", "z"] },
     { "before": ["<S-Tab>"], "after": ["<", "<"] },
     { "before": ["<Tab>"], "after": [">", ">"] }
   ],
   "vim.visualModeKeyBindings": [
+    { "before": ["<C-d>"], "after": ["0", "1", "8", "g", "j", "z", "z"] },
+    { "before": ["<C-u>"], "after": ["0", "1", "8", "g", "k", "z", "z"] },
     { "before": ["leader", "/"], "after": ["g", "c"] },
     { "before": ["<C-a>"], "after": ["<Esc>", "<C-o>", "<C-o>", "z", "z"] },
     { "before": ["<Tab>"], "after": [">"] },
