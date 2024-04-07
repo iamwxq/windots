@@ -1,5 +1,5 @@
 /** @type {import('stylelint').Config} */
-export default {
+module.exports = {
   allowEmptyInput: true,
   extends: [
     "stylelint-config-standard-vue",

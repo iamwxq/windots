@@ -1,9 +1,9 @@
-import antfu from "@antfu/eslint-config";
-import { FlatCompat } from "@eslint/eslintrc";
+const antfu = require("@antfu/eslint-config").default;
+const { FlatCompat } = require("@eslint/eslintrc");
 
 const compat = new FlatCompat();
 
-export default antfu({
+module.exports = antfu({
   stylistic: {
     quotes: "double",
     semi: true,
