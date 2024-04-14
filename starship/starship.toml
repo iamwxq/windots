@@ -8,7 +8,7 @@ error_symbol = "[ ](bold red)"
 
 [cmd_duration]
 min_time = 1000
-show_milliseconds = true
+show_milliseconds = false
 
 [git_metrics]
 disabled = false
