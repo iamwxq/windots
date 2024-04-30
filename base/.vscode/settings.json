@@ -2,16 +2,15 @@
   // Enable the ESlint flat config support
   "eslint.experimental.useFlatConfig": true,
 
-  // Editor
+  // Disable the default formatter, use eslint instead
+  "prettier.enable": false,
   "editor.formatOnSave": false,
 
+  // Auto fix
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
     "source.organizeImports": "never"
   },
-
-  "eslint.enable": true,
-  "eslint.run": "onType",
 
   // Silent the stylistic rules in you IDE, but still auto fix them
   "eslint.rules.customizations": [
@@ -41,8 +40,13 @@
     "json",
     "jsonc",
     "yaml",
-    "toml"
+    "toml",
+    "gql",
+    "graphql"
   ],
+
+  "eslint.enable": true,
+  "eslint.run": "onType",
 
   "css.validate": false,
   "less.validate": false,
