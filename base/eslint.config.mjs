@@ -22,13 +22,16 @@ export default antfu(
       "style/jsx-sort-props": [
         "error",
         {
+          ignoreCase: false,
           callbacksLast: true,
           reservedFirst: true,
           shorthandFirst: true,
+          shorthandLast: false,
+          noSortAlphabetically: false,
           multiline: "last",
         },
       ],
-    }
+    },
   },
   // vue
   {
