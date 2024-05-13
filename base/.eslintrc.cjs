@@ -4,23 +4,19 @@ const customized = stylistic.configs.customize({
   indent: 2,
   quotes: "double",
   semi: true,
-  jsx: true
-})
+  jsx: true,
+});
 
 module.exports = {
   extends: [
     "taro/react",
+    "next/core-web-vitals",
+    "plugin:tailwindcss/recommended",
   ],
   plugins: [
-    '@stylistic'
+    "@stylistic",
   ],
   rules: {
-    "react/jsx-uses-react": "off",
-    "react/react-in-jsx-scope": "off",
-
-    "react/prop-types": "off",
-    "react-refresh/only-export-components": "off",
-
     ...customized.rules,
 
     "@stylistic/jsx-one-expression-per-line": "off",
@@ -34,5 +30,12 @@ module.exports = {
       },
     ],
 
-  }
-}
+    "tailwindcss/migration-from-tailwind-2": "off",
+
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+
+    "react/prop-types": "off",
+    "react-refresh/only-export-components": "off",
+  },
+};
