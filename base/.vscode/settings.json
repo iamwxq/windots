@@ -46,7 +46,8 @@
     "graphql"
   ],
 
-  "css.validate": false,
+  "css.validate": true,
+  "css.lint.unknownAtRules": "ignore",
   "css.format.maxPreserveNewLines": 1,
   "css.format.newlineBetweenRules": true,
   "css.format.newlineBetweenSelectors": true,
@@ -54,7 +55,8 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "vscode.css-language-features"
   },
-  "scss.validate": false,
+  "scss.validate": true,
+  "scss.lint.unknownAtRules": "ignore",
   "scss.format.maxPreserveNewLines": 1,
   "scss.format.newlineBetweenRules": true,
   "scss.format.newlineBetweenSelectors": true,
