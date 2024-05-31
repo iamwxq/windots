@@ -3,7 +3,8 @@
   "eslint.experimental.useFlatConfig": true,
 
   // Disable the default formatter, use eslint instead
-  "prettier.enable": false,
+  "eslint.enable": true,
+  "eslint.run": "onType",
   "editor.formatOnSave": false,
 
   // Auto fix
@@ -45,13 +46,23 @@
     "graphql"
   ],
 
-  "eslint.enable": true,
-  "eslint.run": "onType",
-
   "css.validate": false,
-  "less.validate": false,
+  "css.format.maxPreserveNewLines": 1,
+  "css.format.newlineBetweenRules": true,
+  "css.format.newlineBetweenSelectors": true,
+  "[css]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
   "scss.validate": false,
+  "scss.format.maxPreserveNewLines": 1,
+  "scss.format.newlineBetweenRules": true,
+  "scss.format.newlineBetweenSelectors": true,
+  "[scss]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
 
-  "errorLens.excludeBySource": [ "eslint"],
+  "errorLens.excludeBySource": [ "eslint"]
 }
 
