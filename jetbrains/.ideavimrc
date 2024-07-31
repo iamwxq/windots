@@ -1,0 +1,31 @@
+Plug 'easymotion/vim-easymotion'
+set easymotion
+
+" leader key
+let mapleader = " "
+
+set clipboard+=unnamed
+set ideajoin
+
+" search
+set hlsearch
+set incsearch
+set smartcase
+set ignorecase
+
+set number
+set relativenumber
+
+set noerrorbells
+set visualbell
+
+imap jk <Esc>
+
+nmap [d <action>(GotoNextError)
+nmap <leader>w :w<CR>
+nmap <leader>q :wq!<CR>
+nmap <leader>/ <action>(CommentByLineComment)
+nmap gd <action>(GotoDeclaration)
+nmap K <action>(ShowHoverInfo)
+nnoremap <CR> o<Esc>
+vmap <leader>/ <action>(CommentByLineComment)
