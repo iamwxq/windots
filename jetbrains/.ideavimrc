@@ -1,31 +1,94 @@
-Plug 'easymotion/vim-easymotion'
-set easymotion
-
-" leader key
-let mapleader = " "
-
+" basic options
+set gdefault
+set scrolloff=10
+set relativenumber
+set showmode
+set visualbell
+set highlightedyank
+let g:highlightedyank_highlight_color = "rgba(160, 160, 160, 155)"
+set quickscope
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+set visualbell
 set clipboard+=unnamed
 set ideajoin
-
-" search
-set hlsearch
-set incsearch
-set smartcase
-set ignorecase
-
+set ideamarks
+set idearefactormode=normal
+set ideastatusicon=gray
 set number
-set relativenumber
 
-set noerrorbells
-set visualbell
+" search options
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
 
-imap jk <Esc>
+" leader mapping
+let mapleader = " "
 
-nmap [d <action>(GotoNextError)
-nmap <leader>w :w<CR>
-nmap <leader>q :wq!<CR>
-nmap <leader>/ <action>(CommentByLineComment)
-nmap gd <action>(GotoDeclaration)
-nmap K <action>(ShowHoverInfo)
-nnoremap <CR> o<Esc>
-vmap <leader>/ <action>(CommentByLineComment)
+" plugins
+" set sneak
+set easymotion
+set surround
+set nerdtree
+
+inoremap jk <Esc>
+
+nnoremap L :tabnext<CR>
+nnoremap H :tabprev<CR>\
+noremap <CR> o<Esc>
+noremap <S-CR> O<Esc>
+
+map <leader>w :w<CR>
+map <leader>q <Action>(CloseContent)
+map <leader>/ <Action>(CommentByLineComment)
+map <leader>ff <Action>(GotoFile)
+map <leader>fr <Action>(RecentFiles)
+map <leader>fc <Action>(FindInPath)
+map <leader>rn <Action>(RenameElement)
+map <leader>rm <Action>(ExtractMethod)
+map <leader>rv <Action>(IntroduceVariable)
+map <leader>rf <Action>(IntroduceField)
+map <leader>rs <Action>(ChangeSignature)
+map <leader>rr <Action>(Refactorings.QuickListPopupAction)
+map [d <Action>(GotoNextError)
+map ]d <Action>(GotoPreviousError)
+map K <Action>(ShowHoverInfo)
+map <leader>e :NERDTreeToggle<CR>
+map \ <Action>(SplitVertically)
+map | <Action>(SplitHorizontally)
+
+nmap [[ <Action>(MethodUp)
+nmap ]] <Action>(MethodDown)
+nmap <leader>vr <Action>(IdeaVim.ReloadVimRc.reload)
+nmap gd <Action>(GotoDeclaration)
+nmap gy <Action>(GotoTypeDeclaration)
+nmap gi <Action>(GotoImplementation)
+nmap gu <Action>(ShowUsages)
+nmap gt <Action>(GotoTest)
+nmap gf <Action>(Forward)
+nmap gb <Action>(Back)
+
+nmap <leader>rm <Action>(RunMenu)
+nmap <leader>rn <Action>(RunClass)
+nmap <leader>rc <Action>(ContextRun)
+nmap <leader>rr <Action>(Rerun)
+nmap <leader>rt <Action>(RunTests)
+nmap <leader>rf <Action>(RerunFailedTests)
+nmap <leader>rs <Action>(Stop)
+nmap <leader>rC <Action>(ChooseRunConfiguration)
+
+nmap <leader>dx <Action>(Debug)
+nmap <leader>dc <Action>(ContextDebug)
+nmap <leader>dv <Action>(ViewBreakpoints)
+nmap <leader>de <Action>(EditBreakpoint)
+nmap <leader>dm <Action>(XDebugger.MuteBreakpoints)
+nmap <leader>dt <Action>(ToggleLineBreakpoint)
+nmap <leader>dC <Action>(RunToCursor)
+nmap <leader>di <Action>(StepInto)
+nmap <leader>do <Action>(StepOver)
+nmap <leader>dr <Action>(Resume)
+nmap <leader>dR <Action>(EvaluateExpression)
+nmap <leader>dt <Action>(ActivateDebugToolWindow)
+
+vnoremap < <gv
+vnoremap > >gv
